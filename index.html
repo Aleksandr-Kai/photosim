@@ -1,0 +1,82 @@
+<title>Depth of Field Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+
+<div class="panel">
+  <header>
+    <div class="brand">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+        <rect x="1" y="9" width="32" height="21" rx="4" stroke="currentColor" stroke-width="1.6" fill="none" style="color:var(--text)"/>
+        <rect x="10" y="4" width="10" height="6" rx="1.5" stroke="currentColor" stroke-width="1.6" fill="none" style="color:var(--text)"/>
+        <circle cx="17" cy="19.5" r="7.2" stroke="currentColor" stroke-width="1.6" fill="none" style="color:var(--text)"/>
+        <circle cx="17" cy="19.5" r="2.6" fill="var(--accent)"/>
+        <circle cx="27" cy="13.2" r="1.1" fill="currentColor" style="color:var(--text)"/>
+      </svg>
+      <div>
+        <h1>Depth of Field Lab</h1>
+        <p>Pick a lens, set your distance, see what stays sharp</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="stage">
+    <div class="ruler-wrap">
+      <svg id="scene-svg" viewBox="0 0 700 320" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="drag-hint">Drag the camera to change its height</div>
+    </div>
+  </div>
+
+
+  <div class="controls">
+
+    <div class="field">
+      <div class="field-head">
+        <span class="fname">Subject Distance</span>
+        <span class="fval num" id="val-distance">–</span>
+      </div>
+      <input type="range" id="slider-distance" min="0" max="1000" step="1">
+    </div>
+
+    <div class="field">
+      <div class="field-head"><span class="fname">Subject</span></div>
+      <select id="select-subject"></select>
+    </div>
+
+    <div class="field">
+      <div class="field-head">
+        <span class="fname">Lens</span>
+      </div>
+      <select id="select-lens"></select>
+      <div class="lens-caption" id="lens-caption"></div>
+    </div>
+
+    <div class="field">
+      <div class="field-head">
+        <span class="fname">Focal Length</span>
+        <span class="fval num" id="val-focal">–</span>
+      </div>
+      <input type="range" id="slider-focal" min="0" max="1" step="1">
+      <div class="tickline" id="tick-focal"></div>
+    </div>
+
+    <div class="field">
+      <div class="field-head">
+        <span class="fname">Aperture</span>
+        <span class="fval num" id="val-aperture">–</span>
+      </div>
+      <input type="range" id="slider-aperture" min="0" max="1" step="1">
+      <div class="tickline" id="tick-aperture"></div>
+    </div>
+
+    <div class="field">
+      <div class="field-head"><span class="fname">Sensor</span></div>
+      <select id="select-sensor"></select>
+    </div>
+
+  </div>
+
+  <footer>Circle of confusion derived from sensor diagonal &middot; f-stops snap to standard full stops for the selected lens</footer>
+</div>
+
+<script src="script.js"></script>
