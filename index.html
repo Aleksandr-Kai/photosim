@@ -53,7 +53,9 @@
 			</svg>
 			<div>
 				<h1>PhotoSim</h1>
-				<p>Pick a lens, set your distance, see what stays sharp</p>
+				<p data-i18n="subtitle">
+					Pick a lens, set your distance, see what stays sharp
+				</p>
 			</div>
 		</div>
 	</header>
@@ -65,7 +67,9 @@
 				viewBox="0 0 700 320"
 				preserveAspectRatio="xMidYMid meet"
 			></svg>
-			<div class="drag-hint">Drag the camera to change its height</div>
+			<div class="drag-hint" data-i18n="dragHint">
+				Drag the camera to change its height
+			</div>
 			<a
 				id="author-link"
 				class="tg-link"
@@ -74,7 +78,13 @@
 				rel="noopener noreferrer"
 				aria-label="Author on Telegram: @aleksandr_kai"
 			>
-				<svg class="tg-icon" width="14" height="14" viewBox="0 0 24 24" fill="none">
+				<svg
+					class="tg-icon"
+					width="14"
+					height="14"
+					viewBox="0 0 24 24"
+					fill="none"
+				>
 					<path
 						d="M21.5 4.5L2.7 11.9c-1.2.5-1.2 1.2-.2 1.5l4.8 1.5 1.8 5.6c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.8-1.3-1.2Z"
 						fill="none"
@@ -98,7 +108,7 @@
 	<div class="controls">
 		<div class="field field-distance">
 			<div class="field-head">
-				<span class="fname">Subject Distance</span>
+				<span class="fname" data-i18n="subjectDistance">Subject Distance</span>
 				<span class="fval num" id="val-distance">–</span>
 			</div>
 			<input type="range" id="slider-distance" min="0" max="1000" step="1" />
@@ -107,7 +117,7 @@
 		<div class="hud-sliders">
 			<div class="field field-focal">
 				<div class="field-head">
-					<span class="fname">Focal Length</span>
+					<span class="fname" data-i18n="focalLength">Focal Length</span>
 					<span class="fval num" id="val-focal">–</span>
 				</div>
 				<input type="range" id="slider-focal" min="0" max="1" step="1" />
@@ -116,7 +126,7 @@
 
 			<div class="field field-aperture">
 				<div class="field-head">
-					<span class="fname">Aperture</span>
+					<span class="fname" data-i18n="aperture">Aperture</span>
 					<span class="fval num" id="val-aperture">–</span>
 				</div>
 				<input type="range" id="slider-aperture" min="0" max="1" step="1" />
@@ -127,27 +137,33 @@
 		<div class="hud-pills">
 			<div class="field field-lens">
 				<div class="field-head">
-					<span class="fname">Lens</span>
+					<span class="fname" data-i18n="lens">Lens</span>
 				</div>
 				<select id="select-lens"></select>
 				<div class="lens-caption" id="lens-caption"></div>
 			</div>
 
 			<div class="field field-sensor">
-				<div class="field-head"><span class="fname">Sensor</span></div>
+				<div class="field-head">
+					<span class="fname" data-i18n="sensor">Sensor</span>
+				</div>
 				<select id="select-sensor"></select>
 			</div>
 
 			<div class="field field-subject">
-				<div class="field-head"><span class="fname">Subject</span></div>
+				<div class="field-head">
+					<span class="fname" data-i18n="subject">Subject</span>
+				</div>
 				<select id="select-subject"></select>
 			</div>
 		</div>
 	</div>
 
 	<footer>
-		Circle of confusion derived from sensor diagonal &middot; f-stops snap to standard
-		full stops for the selected lens
+		<span data-i18n="footer"
+			>Circle of confusion derived from sensor diagonal · f-stops snap to standard
+			full stops for the selected lens</span
+		>
 	</footer>
 </div>
 

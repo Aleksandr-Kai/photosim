@@ -1,273 +1,507 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>PhotoSim — Depth of Field Simulator</title>
-<meta name="description" content="PhotoSim is a free Android app that shows you, before you shoot, how much of a scene stays in focus for a given lens, aperture, and distance. Download the APK and install it on your phone." />
-<link rel="icon" type="image/png" href="assets/favicon-64.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
-<style>
-  :root{
-    --bg:#e9edec;
-    --surface:#ffffff;
-    --surface-2:#dde3e1;
-    --border:#c3cbc8;
-    --text:#182220;
-    --text-dim:#5c6663;
-    --accent:#b0560e;
-    --accent-ink:#ffffff;
-    --accent-soft:#f0d9c2;
-    --band:#b3241f;
-    --shadow:0 1px 2px rgba(20,30,28,0.06), 0 16px 40px -20px rgba(20,30,28,0.25);
-  }
-  @media (prefers-color-scheme: dark){
-    :root{
-      --bg:#15181a;
-      --surface:#202426;
-      --surface-2:#2a2f31;
-      --border:#3c4144;
-      --text:#eae7e0;
-      --text-dim:#9ba09f;
-      --accent:#e8912f;
-      --accent-ink:#1a1204;
-      --accent-soft:rgba(232,145,47,0.16);
-      --band:#ff6b5e;
-      --shadow:0 1px 2px rgba(0,0,0,0.3), 0 20px 50px -20px rgba(0,0,0,0.6);
-    }
-  }
-  *{box-sizing:border-box;}
-  html{font-size:clamp(15px, 13px + 0.4vw, 18px);}
-  body{
-    margin:0;
-    background:var(--bg);
-    color:var(--text);
-    font-family:"IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
-    -webkit-font-smoothing:antialiased;
-  }
-  .num{font-family:"IBM Plex Mono", ui-monospace, monospace; font-variant-numeric:tabular-nums;}
-  a{color:inherit;}
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>PhotoSim — Depth of Field Simulator</title>
+		<meta
+			name="description"
+			content="PhotoSim is a free Android app that shows you, before you shoot, how much of a scene stays in focus for a given lens, aperture, and distance. Download the APK and install it on your phone."
+			id="page-description"
+		/>
+		<link rel="icon" type="image/png" href="assets/favicon-64.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+		/>
+		<style>
+			:root {
+				--bg: #e9edec;
+				--surface: #ffffff;
+				--surface-2: #dde3e1;
+				--border: #c3cbc8;
+				--text: #182220;
+				--text-dim: #5c6663;
+				--accent: #b0560e;
+				--accent-ink: #ffffff;
+				--accent-soft: #f0d9c2;
+				--band: #b3241f;
+				--shadow:
+					0 1px 2px rgba(20, 30, 28, 0.06),
+					0 16px 40px -20px rgba(20, 30, 28, 0.25);
+			}
+			@media (prefers-color-scheme: dark) {
+				:root {
+					--bg: #15181a;
+					--surface: #202426;
+					--surface-2: #2a2f31;
+					--border: #3c4144;
+					--text: #eae7e0;
+					--text-dim: #9ba09f;
+					--accent: #e8912f;
+					--accent-ink: #1a1204;
+					--accent-soft: rgba(232, 145, 47, 0.16);
+					--band: #ff6b5e;
+					--shadow:
+						0 1px 2px rgba(0, 0, 0, 0.3), 0 20px 50px -20px rgba(0, 0, 0, 0.6);
+				}
+			}
+			* {
+				box-sizing: border-box;
+			}
+			html {
+				font-size: clamp(15px, 13px + 0.4vw, 18px);
+			}
+			body {
+				margin: 0;
+				background: var(--bg);
+				color: var(--text);
+				font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+				-webkit-font-smoothing: antialiased;
+			}
+			.num {
+				font-family: "IBM Plex Mono", ui-monospace, monospace;
+				font-variant-numeric: tabular-nums;
+			}
+			a {
+				color: inherit;
+			}
 
-  .wrap{
-    max-width:42rem;
-    margin:0 auto;
-    padding:3.5rem 1.5rem 4rem;
-  }
+			.wrap {
+				position: relative;
+				width: min(100%, 100vw);
+				max-width: none;
+				margin: 0 auto;
+				padding: 3.5rem 1.5rem 4rem;
+			}
 
-  header.hero{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-    gap:1rem;
-    margin-bottom:2.5rem;
-  }
-  header.hero img{
-    width:5.5rem;
-    height:5.5rem;
-    border-radius:1.375rem;
-    box-shadow:var(--shadow);
-  }
-  header.hero h1{
-    font-size:2.1rem;
-    font-weight:700;
-    letter-spacing:-0.01em;
-    margin:0.25rem 0 0;
-  }
-  header.hero p.tagline{
-    margin:0;
-    font-size:1.05rem;
-    color:var(--text-dim);
-    max-width:30rem;
-  }
+			header.hero {
+				display: grid;
+				grid-template-columns: auto minmax(0, 1fr) auto;
+				align-items: center;
+				column-gap: 1.25rem;
+				row-gap: 0.75rem;
+				width: min(100%, 44rem);
+				margin: 0 auto 2.5rem;
+				padding: 1.2rem 1.3rem 1.25rem;
+				background: rgba(32, 36, 38, 0.88);
+				border: 1px solid rgba(255, 255, 255, 0.08);
+				border-radius: 1.125rem;
+				box-shadow: 0 18px 40px -28px rgba(0, 0, 0, 0.18);
+			}
+			.lang-switch {
+				position: absolute;
+				top: 3.5rem;
+				left: clamp(1.5rem, 6vw, 5.5rem);
+				display: inline-flex;
+				align-items: center;
+				gap: 0.2rem;
+				padding: 0.2rem;
+				background: rgba(255, 255, 255, 0.05);
+				border: 1px solid rgba(255, 255, 255, 0.14);
+				border-radius: 999px;
+				backdrop-filter: blur(6px);
+			}
+			@media (max-width: 960px) {
+				.lang-switch {
+					top: 0.75rem;
+				}
+			}
+			.lang-tab {
+				appearance: none;
+				border: 0;
+				border-radius: 999px;
+				padding: 0.38rem 0.7rem;
+				background: transparent;
+				color: rgba(234, 231, 224, 0.75);
+				font: inherit;
+				font-size: 0.76rem;
+				font-weight: 600;
+				letter-spacing: 0.04em;
+				text-transform: uppercase;
+				cursor: pointer;
+				transition:
+					background 0.15s ease,
+					color 0.15s ease,
+					transform 0.15s ease;
+			}
+			.lang-tab:hover {
+				transform: translateY(-1px);
+			}
+			.lang-tab.is-active {
+				background: #f4f1ec;
+				color: #1a1204;
+				box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+			}
+			header.hero .hero-icon {
+				width: 5.5rem;
+				height: 5.5rem;
+				border-radius: 1.375rem;
+				box-shadow: var(--shadow);
+				grid-column: 1;
+				grid-row: 1 / span 2;
+			}
+			header.hero .hero-copy {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				text-align: left;
+				gap: 0.4rem;
+				grid-column: 2;
+				grid-row: 1;
+			}
+			header.hero h1 {
+				font-size: 2.1rem;
+				font-weight: 700;
+				letter-spacing: -0.01em;
+				margin: 0;
+				color: var(--text);
+			}
+			header.hero p.tagline {
+				margin: 0;
+				font-size: 1.05rem;
+				color: var(--text-dim);
+				max-width: 30rem;
+			}
+			header.hero .cta-wrap {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 0.6rem;
+				grid-column: 3;
+				grid-row: 1 / span 2;
+				justify-self: start;
+				align-self: center;
+				margin-top: 0;
+			}
 
-  .cta{
-    display:inline-flex;
-    align-items:center;
-    gap:0.6rem;
-    margin-top:0.75rem;
-    padding:0.95rem 1.75rem;
-    border-radius:0.875rem;
-    background:var(--accent);
-    color:var(--accent-ink);
-    font-weight:600;
-    font-size:1.05rem;
-    text-decoration:none;
-    box-shadow:var(--shadow);
-    transition:transform 0.15s ease;
-  }
-  .cta:hover{ transform:translateY(-1px); }
-  .cta svg{ flex:0 0 auto; }
-  .cta-meta{
-    margin-top:0.6rem;
-    font-size:0.8rem;
-    color:var(--text-dim);
-  }
+			.cta {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.6rem;
+				margin-top: 0;
+				padding: 0.95rem 1.75rem;
+				border-radius: 0.875rem;
+				background: var(--accent);
+				color: var(--accent-ink);
+				font-weight: 600;
+				font-size: 1.05rem;
+				text-decoration: none;
+				box-shadow: var(--shadow);
+				transition: transform 0.15s ease;
+			}
+			.cta:hover {
+				transform: translateY(-1px);
+			}
+			.cta svg {
+				flex: 0 0 auto;
+			}
+			.cta-meta {
+				margin-top: 0;
+				font-size: 0.8rem;
+				color: var(--text-dim);
+				white-space: nowrap;
+			}
 
-  .scene{
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:1.125rem;
-    box-shadow:var(--shadow);
-    padding:1rem;
-    margin-bottom:2.5rem;
-  }
-  .scene svg{ display:block; width:100%; height:auto; }
+			.page-embed {
+				display: block;
+				width: 100%;
+				max-width: none;
+				height: 1280px;
+				border: 0;
+				border-radius: 1.125rem;
+				background: var(--surface);
+				box-shadow: var(--shadow);
+				margin: 0 auto 2.75rem;
+				scrollbar-width: none;
+				overflow: hidden;
+			}
+			.page-embed::-webkit-scrollbar {
+				display: none;
+			}
 
-  section{ margin-bottom:2.75rem; }
-  section h2{
-    font-size:1.3rem;
-    font-weight:700;
-    margin:0 0 0.9rem;
-    letter-spacing:-0.005em;
-  }
-  section p{ color:var(--text-dim); line-height:1.6; margin:0 0 0.75rem; }
+			section {
+				margin-bottom: 2.75rem;
+			}
+			section h2 {
+				font-size: 1.3rem;
+				font-weight: 700;
+				margin: 0 0 0.9rem;
+				letter-spacing: -0.005em;
+			}
+			section p {
+				color: var(--text-dim);
+				line-height: 1.6;
+				margin: 0 0 0.75rem;
+			}
 
-  .features{
-    list-style:none;
-    padding:0;
-    margin:0;
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    gap:0.75rem;
-  }
-  .features li{
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:0.75rem;
-    padding:0.9rem 1rem;
-    font-size:0.88rem;
-    line-height:1.45;
-  }
-  .features li strong{ display:block; margin-bottom:0.2rem; }
-  @media (max-width:520px){
-    .features{ grid-template-columns:1fr; }
-  }
+			.features {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 0.75rem;
+			}
+			.features li {
+				background: var(--surface);
+				border: 1px solid var(--border);
+				border-radius: 0.75rem;
+				padding: 0.9rem 1rem;
+				font-size: 0.88rem;
+				line-height: 1.45;
+			}
+			.features li strong {
+				display: block;
+				margin-bottom: 0.2rem;
+			}
+			@media (max-width: 520px) {
+				.features {
+					grid-template-columns: 1fr;
+				}
+			}
 
-  .steps{
-    counter-reset:step;
-    list-style:none;
-    padding:0;
-    margin:0;
-    display:flex;
-    flex-direction:column;
-    gap:0.75rem;
-  }
-  .steps li{
-    counter-increment:step;
-    display:flex;
-    gap:0.9rem;
-    align-items:flex-start;
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:0.75rem;
-    padding:0.9rem 1rem;
-  }
-  .steps li::before{
-    content:counter(step);
-    flex:0 0 auto;
-    width:1.6rem;
-    height:1.6rem;
-    border-radius:50%;
-    background:var(--accent-soft);
-    color:var(--accent);
-    font-weight:700;
-    font-size:0.85rem;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-  .steps li p{ margin:0; color:var(--text); line-height:1.5; }
-  .steps li .note{ display:block; margin-top:0.2rem; color:var(--text-dim); font-size:0.85rem; }
+			.steps {
+				counter-reset: step;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				display: flex;
+				flex-direction: column;
+				gap: 0.75rem;
+			}
+			.steps li {
+				counter-increment: step;
+				display: flex;
+				gap: 0.9rem;
+				align-items: flex-start;
+				background: var(--surface);
+				border: 1px solid var(--border);
+				border-radius: 0.75rem;
+				padding: 0.9rem 1rem;
+			}
+			.steps li::before {
+				content: counter(step);
+				flex: 0 0 auto;
+				width: 1.6rem;
+				height: 1.6rem;
+				border-radius: 50%;
+				background: var(--accent-soft);
+				color: var(--accent);
+				font-weight: 700;
+				font-size: 0.85rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.steps li p {
+				margin: 0;
+				color: var(--text);
+				line-height: 1.5;
+			}
+			.steps li .note {
+				display: block;
+				margin-top: 0.2rem;
+				color: var(--text-dim);
+				font-size: 0.85rem;
+			}
 
-  .note-box{
-    background:var(--accent-soft);
-    border-radius:0.75rem;
-    padding:0.9rem 1rem;
-    font-size:0.85rem;
-    color:var(--text);
-    line-height:1.5;
-  }
+			.note-box {
+				background: var(--accent-soft);
+				border-radius: 0.75rem;
+				padding: 0.9rem 1rem;
+				font-size: 0.85rem;
+				color: var(--text);
+				line-height: 1.5;
+			}
 
-  footer{
-    border-top:1px solid var(--border);
-    padding-top:1.5rem;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    gap:0.75rem;
-    font-size:0.85rem;
-    color:var(--text-dim);
-  }
-  footer a{ color:var(--text); text-decoration:none; }
-  footer a:hover{ text-decoration:underline; }
-</style>
-</head>
-<body>
-  <div class="wrap">
-    <header class="hero">
-      <img src="assets/icon-256.png" alt="PhotoSim app icon" width="88" height="88" />
-      <h1>PhotoSim</h1>
-      <p class="tagline">See what stays sharp before you press the shutter. A depth-of-field simulator for Android, built from a real lens &amp; sensor database.</p>
-      <a class="cta" href="https://github.com/Aleksandr-Kai/photosim/releases/download/v1.0.0/PhotoSim.apk" download>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-          <path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        Download for Android
-      </a>
-      <div class="cta-meta num">v1.0.0 · APK · Android 6.0+</div>
-    </header>
+			footer {
+				border-top: 1px solid var(--border);
+				padding-top: 1.5rem;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				gap: 0.75rem;
+				font-size: 0.85rem;
+				color: var(--text-dim);
+			}
+			footer a {
+				color: var(--text);
+				text-decoration: none;
+			}
+			footer a:hover {
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="lang-switch" aria-label="Language selector">
+				<button
+					class="lang-tab is-active"
+					type="button"
+					data-language="en"
+					aria-pressed="true"
+				>
+					EN
+				</button>
+				<button
+					class="lang-tab"
+					type="button"
+					data-language="ru"
+					aria-pressed="false"
+				>
+					RU
+				</button>
+			</div>
+			<header class="hero">
+				<img
+					class="hero-icon"
+					src="assets/icon-256.png"
+					alt="PhotoSim app icon"
+					width="88"
+					height="88"
+				/>
+				<div class="hero-copy">
+					<h1>PhotoSim</h1>
+					<p class="tagline" data-i18n="tagline">
+						See what stays sharp before you press the shutter. A
+						depth-of-field simulator for Android, built from a real lens &amp;
+						sensor database.
+					</p>
+				</div>
+				<div class="cta-wrap">
+					<a
+						class="cta"
+						href="https://github.com/Aleksandr-Kai/photosim/releases/download/v1.0.0/PhotoSim.apk"
+						download
+					>
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+							<path
+								d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+						<span data-i18n="download">Download for Android</span>
+					</a>
+					<div class="cta-meta num">v1.0.0 · APK · Android 6.0+</div>
+				</div>
+			</header>
 
-    <div class="scene">
-      <svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg">
-        <rect x="0" y="0" width="700" height="260" fill="var(--surface)"/>
-        <path d="M70,180 L630,50 L630,230 Z" fill="var(--surface-2)"/>
-        <path d="M240,110 L290,98 L290,192 L240,180 Z" fill="var(--band)" fill-opacity="0.28"/>
-        <path d="M240,110 L290,98 L290,192 L240,180 Z" fill="none" stroke="var(--band)" stroke-width="2"/>
-        <line x1="264" y1="70" x2="264" y2="220" stroke="var(--band)" stroke-width="2.5"/>
-        <g stroke="var(--text)" stroke-width="4" stroke-linejoin="round" fill="none">
-          <rect x="30" y="140" width="80" height="52" rx="8" fill="var(--surface-2)"/>
-          <rect x="60" y="118" width="30" height="18" rx="4" fill="var(--surface-2)"/>
-          <circle cx="60" cy="166" r="20" fill="var(--surface)"/>
-          <circle cx="60" cy="166" r="6" fill="var(--text)" stroke="none"/>
-        </g>
-        <g stroke="var(--text)" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" fill="var(--surface)">
-          <circle cx="264" cy="70" r="14"/>
-          <path d="M240,150 C240,110 250,92 264,92 C278,92 288,110 288,150 Z"/>
-        </g>
-        <line x1="55" y1="218" x2="645" y2="218" stroke="var(--text)" stroke-width="3"/>
-      </svg>
-    </div>
+			<iframe
+				class="page-embed"
+				src="../index.html"
+				title="PhotoSim app preview"
+				data-i18n-title="preview"
+				loading="lazy"
+				scrolling="no"
+				sandbox="allow-scripts allow-same-origin"
+			></iframe>
 
-    <section>
-      <h2>What it does</h2>
-      <p>Pick a real camera lens and sensor from the built-in database, set how far you are from your subject, and PhotoSim draws the exact zone that will be sharp — near limit, far limit, and everything in between. Drag the subject or the camera right in the scene to see the sharp zone update live.</p>
-      <ul class="features">
-        <li><strong>Real gear database</strong>Over a hundred lenses across Canon RF/EF, Nikon Z, Sony E, Fujifilm X, Micro Four Thirds, and third-party glass.</li>
-        <li><strong>Live, to-scale scene</strong>Camera and subject drawn at true relative size, on a fixed 10&nbsp;m ruler — no distorted scale tricks.</li>
-        <li><strong>Drag to focus</strong>Move the subject or the camera's height directly in the illustration, not just with sliders.</li>
-        <li><strong>Works offline</strong>Everything is bundled in the app — no signal needed once it's installed.</li>
-      </ul>
-    </section>
+			<footer>
+				<span>
+					<span data-i18n="madeBy">Made by</span>
+					<a
+						href="https://t.me/aleksandr_kai"
+						target="_blank"
+						rel="noopener noreferrer"
+						>@aleksandr_kai</a
+					>
+					<span data-i18n="onTelegram">on Telegram</span>
+				</span>
+				<a
+					href="https://github.com/Aleksandr-Kai/photosim"
+					target="_blank"
+					rel="noopener noreferrer"
+					data-i18n="source"
+					>Source on GitHub</a
+				>
+			</footer>
+		</div>
+		<script>
+			(() => {
+				const translations = {
+					en: {
+						title: "PhotoSim — Depth of Field Simulator",
+						description:
+							"PhotoSim is a free Android app that shows you, before you shoot, how much of a scene stays in focus for a given lens, aperture, and distance. Download the APK and install it on your phone.",
+						tagline:
+							"See what stays sharp before you press the shutter. A depth-of-field simulator for Android, built from a real lens & sensor database.",
+						download: "Download for Android",
+						madeBy: "Made by",
+						onTelegram: "on Telegram",
+						source: "Source on GitHub",
+						preview: "PhotoSim app preview",
+						selector: "Language selector",
+					},
+					ru: {
+						title: "PhotoSim — симулятор глубины резкости",
+						description:
+							"PhotoSim — бесплатное Android-приложение, которое показывает, какая часть сцены будет в фокусе при выбранных объективе, диафрагме и расстоянии. Скачайте APK и установите его на телефон.",
+						tagline:
+							"Узнайте, что останется резким, прежде чем нажать на спуск. Симулятор глубины резкости для Android с базой реальных объективов и матриц.",
+						download: "Скачать для Android",
+						madeBy: "Автор",
+						onTelegram: "в Telegram",
+						source: "Исходный код на GitHub",
+						preview: "Предпросмотр приложения PhotoSim",
+						selector: "Выбор языка",
+					},
+				};
+				const storageKey = "photosim-language";
+				const iframe = document.querySelector(".page-embed");
+				const description = document.querySelector("#page-description");
+				const buttons = [...document.querySelectorAll(".lang-tab")];
+				let currentLanguage = "en";
 
-    <section>
-      <h2>Install on your phone</h2>
-      <ol class="steps">
-        <li><p>Tap <strong>Download for Android</strong> above. It downloads a single <span class="num">.apk</span> file (about 2.5&nbsp;MB) straight from GitHub.</p></li>
-        <li><p>Open the downloaded file from your notification shade or <strong>Downloads</strong> app.<span class="note">Android will offer to open it with Package Installer — that's the right one.</span></p></li>
-        <li><p>Android will warn that installing from this source isn't allowed yet and offer a <strong>Settings</strong> shortcut. Turn on "Allow from this source" for your browser — it's a one-time step.</p></li>
-        <li><p>Go back and tap <strong>Install</strong>, then open PhotoSim.</p></li>
-      </ol>
-      <p class="note-box">This warning appears because PhotoSim isn't distributed through the Play Store — it's a small independent project. The APK is built straight from the source in this repository, nothing hidden.</p>
-    </section>
+				function applyLanguage(language) {
+					currentLanguage = language === "ru" ? "ru" : "en";
+					const strings = translations[currentLanguage];
+					document.documentElement.lang = currentLanguage;
+					document.title = strings.title;
+					description.content = strings.description;
+					document
+						.querySelector(".lang-switch")
+						.setAttribute("aria-label", strings.selector);
+					document.querySelectorAll("[data-i18n]").forEach((element) => {
+						element.textContent = strings[element.dataset.i18n];
+					});
+					document.querySelectorAll("[data-i18n-title]").forEach((element) => {
+						element.title = strings[element.dataset.i18nTitle];
+					});
+					buttons.forEach((button) => {
+						const isActive = button.dataset.language === currentLanguage;
+						button.classList.toggle("is-active", isActive);
+						button.setAttribute("aria-pressed", String(isActive));
+					});
+					iframe.contentWindow?.postMessage(
+						{ type: "photosim-language", language: currentLanguage },
+						"*",
+					);
+				}
 
-    <footer>
-      <span>Made by <a href="https://t.me/aleksandr_kai" target="_blank" rel="noopener noreferrer">@aleksandr_kai</a> on Telegram</span>
-      <a href="https://github.com/Aleksandr-Kai/photosim" target="_blank" rel="noopener noreferrer">Source on GitHub</a>
-    </footer>
-  </div>
-</body>
+				buttons.forEach((button) => {
+					button.addEventListener("click", () => {
+						const language = button.dataset.language;
+						localStorage.setItem(storageKey, language);
+						applyLanguage(language);
+					});
+				});
+				iframe.addEventListener("load", () => applyLanguage(currentLanguage));
+				applyLanguage(localStorage.getItem(storageKey) || "en");
+			})();
+		</script>
+	</body>
 </html>

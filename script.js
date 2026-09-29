@@ -1,5 +1,116 @@
 (function () {
 	"use strict";
+	var currentLanguage = "en";
+	var UI_TEXT = {
+		en: {
+			subtitle: "Pick a lens, set your distance, see what stays sharp",
+			dragHint: "Drag the camera to change its height",
+			subjectDistance: "Subject Distance",
+			focalLength: "Focal Length",
+			aperture: "Aperture",
+			lens: "Lens",
+			sensor: "Sensor",
+			subject: "Subject",
+			footer: "Circle of confusion derived from sensor diagonal · f-stops snap to standard full stops for the selected lens",
+			fixed: "Fixed",
+			constant: "constant",
+			closes: "closes to",
+			focalUnit: "mm",
+			meterUnit: "m",
+			centimeterUnit: "cm",
+			customLens: "Custom — No Lens Limit",
+			author: "Author on Telegram: @aleksandr_kai",
+			close: "Close",
+			sensors: {
+				ff: "Full Frame — 36 × 24mm",
+				apsc: "APS-C — 23.5 × 15.6mm",
+				m43: "Micro Four Thirds — 17.3 × 13mm",
+				mf: "Medium Format — 43.8 × 32.9mm",
+				"1inch": "1-inch — 13.2 × 8.8mm",
+				phone: "Smartphone — 7.6 × 5.7mm",
+				webcam: "Webcam — 4.8 × 3.6mm",
+			},
+			subjects: {
+				object: "Object — Rose on a Table (~80 cm)",
+				person: "Person (~1.6 m tall)",
+				tree: "Tree (~6 m tall)",
+			},
+			groups: {},
+		},
+		ru: {
+			subtitle:
+				"Выберите объектив, задайте расстояние и посмотрите, что останется резким",
+			dragHint: "Перетащите камеру, чтобы изменить её высоту",
+			subjectDistance: "Расстояние до объекта",
+			focalLength: "Фокусное расстояние",
+			aperture: "Диафрагма",
+			lens: "Объектив",
+			sensor: "Матрица",
+			subject: "Объект съёмки",
+			footer: "Кружок нерезкости рассчитан по диагонали матрицы · диафрагма фиксируется на стандартных полных ступенях выбранного объектива",
+			fixed: "Фикс.",
+			constant: "постоянная",
+			closes: "закрывается до",
+			focalUnit: " мм",
+			meterUnit: "м",
+			centimeterUnit: "см",
+			customLens: "Настраиваемый — без ограничений объектива",
+			author: "Автор в Telegram: @aleksandr_kai",
+			close: "Закрыть",
+			sensors: {
+				ff: "Полный кадр — 36 × 24 мм",
+				apsc: "APS-C — 23,5 × 15,6 мм",
+				m43: "Микро 4/3 — 17,3 × 13 мм",
+				mf: "Средний формат — 43,8 × 32,9 мм",
+				"1inch": "1 дюйм — 13,2 × 8,8 мм",
+				phone: "Смартфон — 7,6 × 5,7 мм",
+				webcam: "Веб-камера — 4,8 × 3,6 мм",
+			},
+			subjects: {
+				object: "Объект — роза на столе (~80 см)",
+				person: "Человек (~1,6 м ростом)",
+				tree: "Дерево (~6 м высотой)",
+			},
+			groups: {
+				"Canon RF (Full Frame)": "Canon RF (полный кадр)",
+				"Canon RF-S (APS-C)": "Canon RF-S (APS-C)",
+				"Canon EF (Full Frame DSLR)":
+					"Canon EF (полнокадровые зеркальные камеры)",
+				"Canon EF-S (APS-C DSLR)": "Canon EF-S (APS-C, зеркальные камеры)",
+				"Nikon Z (Full Frame)": "Nikon Z (полный кадр)",
+				"Nikon Z DX (APS-C)": "Nikon Z DX (APS-C)",
+				"Sony E (Full Frame)": "Sony E (полный кадр)",
+				"Sony E (APS-C)": "Sony E (APS-C)",
+				"Fujifilm X (APS-C)": "Fujifilm X (APS-C)",
+				"Micro Four Thirds": "Микро 4/3",
+				"Third-Party (Various Mounts)": "Сторонние объективы (разные байонеты)",
+			},
+		},
+	};
+
+	function setLanguage(language) {
+		currentLanguage = language === "ru" ? "ru" : "en";
+		var text = UI_TEXT[currentLanguage];
+		document.documentElement.lang = currentLanguage;
+		document.querySelectorAll("[data-i18n]").forEach(function (element) {
+			element.textContent = text[element.getAttribute("data-i18n")];
+		});
+		var authorLink = $("author-link");
+		if (authorLink) authorLink.setAttribute("aria-label", text.author);
+		populateLensSelect();
+		populateSensorSelect();
+		populateSubjectSelect();
+		["select-lens", "select-sensor", "select-subject"].forEach(function (id) {
+			var select = $(id);
+			if (select && select._cselRefresh) select._cselRefresh();
+		});
+		if ($("scene-svg")) render();
+	}
+
+	window.addEventListener("message", function (event) {
+		if (event.source !== window.parent || !event.data) return;
+		if (event.data.type === "photosim-language") setLanguage(event.data.language);
+	});
 
 	var MASTER_FOCAL = [
 		8, 10, 11, 12, 14, 15, 16, 17, 18, 20, 23, 24, 25, 28, 30, 33, 35, 40, 45, 50, 55,
@@ -1436,8 +1547,15 @@
 
 	function formatDistance(m) {
 		if (!isFinite(m)) return "∞";
-		if (m < 1) return (m * 100).toFixed(1) + " cm";
-		return m.toFixed(2) + " m";
+		var value = m < 1 ? (m * 100).toFixed(1) : m.toFixed(2);
+		if (currentLanguage === "ru") value = value.replace(".", ",");
+		return (
+			value +
+			" " +
+			(m < 1
+				? UI_TEXT[currentLanguage].centimeterUnit
+				: UI_TEXT[currentLanguage].meterUnit)
+		);
 	}
 
 	// ---- DOF physics ----
@@ -1481,13 +1599,14 @@
 			var parent = sel;
 			if (g) {
 				parent = document.createElement("optgroup");
-				parent.label = g;
+				parent.label = UI_TEXT[currentLanguage].groups[g] || g;
 				sel.appendChild(parent);
 			}
 			groups[g].forEach(function (l) {
 				var opt = document.createElement("option");
 				opt.value = l.id;
-				opt.textContent = l.name;
+				opt.textContent =
+					l.id === "custom" ? UI_TEXT[currentLanguage].customLens : l.name;
 				parent.appendChild(opt);
 			});
 		});
@@ -1500,7 +1619,7 @@
 		SENSORS.forEach(function (s) {
 			var opt = document.createElement("option");
 			opt.value = s.id;
-			opt.textContent = s.name;
+			opt.textContent = UI_TEXT[currentLanguage].sensors[s.id] || s.name;
 			sel.appendChild(opt);
 		});
 		sel.value = state.sensorId;
@@ -1512,7 +1631,7 @@
 		SUBJECTS.forEach(function (s) {
 			var opt = document.createElement("option");
 			opt.value = s.id;
-			opt.textContent = s.name;
+			opt.textContent = UI_TEXT[currentLanguage].subjects[s.id] || s.name;
 			sel.appendChild(opt);
 		});
 		sel.value = state.subjectId;
@@ -1596,7 +1715,9 @@
 	// widened (or narrowed) to whatever aspect the real screen has
 	var FULLSCREEN_MQ =
 		window.matchMedia &&
-		window.matchMedia("(orientation: landscape) and (hover: none) and (pointer: coarse)");
+		window.matchMedia(
+			"(orientation: landscape) and (hover: none) and (pointer: coarse)",
+		);
 
 	// recomputed on every render and on window resize — keeps the scene's
 	// viewBox, on-screen scale and camera/person sizing all in sync with
@@ -1701,13 +1822,14 @@
 		focalSlider.value = fIdx;
 		focalSlider.disabled = isPrime;
 		setSliderPct(focalSlider, fIdx, focalList.length - 1);
-		$("val-focal").textContent = state.focal + "mm";
+		$("val-focal").textContent = state.focal + UI_TEXT[currentLanguage].focalUnit;
 		$("tick-focal").innerHTML =
 			"<span>" +
 			focalList[0] +
 			"</span><span>" +
 			focalList[focalList.length - 1] +
-			"mm</span>";
+			UI_TEXT[currentLanguage].focalUnit +
+			"</span>";
 
 		var apList = buildApertureList(lens, state.focal);
 		var apSlider = $("slider-aperture");
@@ -1727,16 +1849,25 @@
 			"</span>";
 
 		var focalLabel = isPrime
-			? "Fixed " + lens.minF + "mm"
-			: lens.minF + "–" + lens.maxF + "mm";
+			? UI_TEXT[currentLanguage].fixed +
+				" " +
+				lens.minF +
+				UI_TEXT[currentLanguage].focalUnit
+			: lens.minF + "–" + lens.maxF + UI_TEXT[currentLanguage].focalUnit;
 		var apertureLabel =
 			lens.wMin !== lens.wMax
 				? "f/" + round1(lens.wMin) + "–f/" + round1(lens.wMax)
 				: isPrime
 					? "f/" + round1(lens.wMin)
-					: "constant f/" + round1(lens.wMin);
+					: UI_TEXT[currentLanguage].constant + " f/" + round1(lens.wMin);
 		$("lens-caption").textContent =
-			focalLabel + " · " + apertureLabel + " · closes to f/" + lens.narrow;
+			focalLabel +
+			" · " +
+			apertureLabel +
+			" · " +
+			UI_TEXT[currentLanguage].closes +
+			" f/" +
+			lens.narrow;
 
 		var distSlider = $("slider-distance");
 		distSlider.value = distanceToSlider(state.distanceM);
@@ -1753,10 +1884,7 @@
 		// rather than sit on top of them
 		var tgLink = $("author-link");
 		if (tgLink) {
-			tgLink.classList.toggle(
-				"is-hidden",
-				state.distanceM >= SCENE_MAX_M - 1,
-			);
+			tgLink.classList.toggle("is-hidden", state.distanceM >= SCENE_MAX_M - 1);
 		}
 
 		saveState();
@@ -1862,7 +1990,8 @@
 			' Z" fill="var(--surface-3)"/>' +
 			'<text class="scene-label" x="20" y="34" font-family="IBM Plex Sans, sans-serif" font-weight="700" font-size="22" fill="var(--text)">' +
 			state.focal +
-			"mm f/" +
+			UI_TEXT[currentLanguage].focalUnit +
+			" f/" +
 			state.aperture +
 			"</text>" +
 			'<line x1="' +
@@ -1874,7 +2003,9 @@
 			(rightX - 6) +
 			'" y="27" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--text-dim)">' +
 			SCENE_MAX_M +
-			" m</text>" +
+			" " +
+			UI_TEXT[currentLanguage].meterUnit +
+			"</text>" +
 			'<g transform="' +
 			subjTransform +
 			'">' +
@@ -2252,6 +2383,10 @@
 
 		syncLabel();
 		select._cselSyncLabel = syncLabel;
+		select._cselRefresh = function () {
+			syncLabel();
+			if (list.classList.contains("is-open")) buildList();
+		};
 	}
 
 	// only present inside the Android app's WebView (see MainActivity's
@@ -2259,8 +2394,7 @@
 	// in-scene "Close" button at all, so this stays fully absent on the
 	// web, where there's no app to close
 	function initAndroidBridge() {
-		if (!window.AndroidApp || typeof window.AndroidApp.close !== "function")
-			return;
+		if (!window.AndroidApp || typeof window.AndroidApp.close !== "function") return;
 		var btn = document.createElement("button");
 		btn.type = "button";
 		btn.className = "close-btn";
@@ -2268,7 +2402,7 @@
 		icon.className = "close-icon";
 		var label = document.createElement("span");
 		label.className = "close-label";
-		label.textContent = "Close";
+		label.textContent = UI_TEXT[currentLanguage].close;
 		btn.appendChild(icon);
 		btn.appendChild(label);
 		btn.addEventListener("click", function () {
