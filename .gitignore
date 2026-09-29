@@ -1,0 +1,12 @@
+# Android/Gradle build output
+.gradle/
+build/
+app/build/
+local.properties
+
+# editor/tooling
+.vscode/
+.claude/
+
+# APKs are distributed via GitHub Releases, not committed
+*.apk
