@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /simulator.html
+
+Sitemap: https://aleksandr-kai.github.io/photosim/sitemap.xml
