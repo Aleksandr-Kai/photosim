@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>PhotoSim — Depth of Field Simulator</title>
+		<title>Depth of Field Calculator Online — DoF Simulator for Android | PhotoSim</title>
 		<meta
 			name="description"
 			content="PhotoSim is a free Android app that shows you, before you shoot, how much of a scene stays in focus for a given lens, aperture, and distance. Download the APK and install it on your phone."
@@ -18,7 +18,7 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:site_name" content="PhotoSim" />
 		<meta property="og:url" content="https://aleksandr-kai.github.io/photosim/" />
-		<meta property="og:title" content="PhotoSim — Depth of Field Simulator" />
+		<meta property="og:title" content="Depth of Field Calculator Online — DoF Simulator for Android | PhotoSim" />
 		<meta
 			property="og:description"
 			content="See what stays sharp before you press the shutter. A depth-of-field simulator for Android, built from a real lens & sensor database."
@@ -413,6 +413,7 @@
 				}
 			}
 		</script>
+			<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is depth of field?", "acceptedAnswer": {"@type": "Answer", "text": "Depth of field (DoF) is the distance between the nearest and farthest objects that look acceptably sharp in a photo. Everything outside that zone is progressively blurred."}}, {"@type": "Question", "name": "How do I increase depth of field?", "acceptedAnswer": {"@type": "Answer", "text": "Stop the aperture down (higher f-number), use a shorter focal length, move away from the subject, or use a camera with a smaller sensor. You can test each change instantly in the calculator above."}}, {"@type": "Question", "name": "How do I get a blurry background?", "acceptedAnswer": {"@type": "Answer", "text": "Open the aperture (f/1.4–f/2.8), use a longer focal length, move closer to the subject and increase the distance between the subject and the background."}}, {"@type": "Question", "name": "What is hyperfocal distance?", "acceptedAnswer": {"@type": "Answer", "text": "The focus distance at which everything from half that distance to infinity is acceptably sharp — useful for landscapes."}}, {"@type": "Question", "name": "Which circle of confusion does the calculator use?", "acceptedAnswer": {"@type": "Answer", "text": "The sensor diagonal divided by 1500 — about 0.029 mm on full frame."}}, {"@type": "Question", "name": "Is there an Android app?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. PhotoSim is a free Android app that works offline. Download the APK from this page."}}]}</script>
 	</head>
 	<body>
 		<div class="wrap">
@@ -496,6 +497,36 @@
 				scrolling="no"
 				sandbox="allow-scripts allow-same-origin"
 			></iframe>
+			<style>
+				article.guide{max-width:46rem;margin:0 auto 2.5rem}
+				article.guide h2{font-size:1.4rem;margin:2.2rem 0 .8rem}
+				article.guide p,article.guide li{color:var(--text-dim);line-height:1.7}
+				article.guide .formula{background:var(--surface);border:1px solid var(--border);border-radius:.75rem;padding:.9rem 1rem;font-family:"IBM Plex Mono",monospace;font-size:.9rem;color:var(--text);overflow-x:auto;line-height:1.8}
+				article.guide details{background:var(--surface);border:1px solid var(--border);border-radius:.75rem;padding:.8rem 1rem;margin-bottom:.6rem}
+				article.guide summary{cursor:pointer;font-weight:600;color:var(--text)}
+				article.guide details p{margin:.6rem 0 0}
+			</style>
+			<article class="guide" id="dof-guide">
+				<h1 style="font-size:1.6rem;margin:0 0 .6rem">Free depth of field calculator &amp; DoF simulator</h1>
+				<p>PhotoSim is a depth of field (DoF) calculator that <em>shows</em> you the result. Pick a real lens and sensor, set the focal length, aperture and subject distance, and see the zone of acceptable sharpness drawn to scale — near limit, far limit, total depth and hyperfocal distance. Drag the subject or the camera right in the scene.</p>
+				<h2>What affects depth of field</h2>
+				<ul>
+					<li><strong>Aperture.</strong> A higher f-number (f/11, f/16) gives more depth of field; wide apertures (f/1.4, f/1.8) give less and a blurrier background.</li>
+					<li><strong>Focal length.</strong> At the same framing, longer lenses give a shallower depth of field than wide ones.</li>
+					<li><strong>Subject distance.</strong> The closer you focus, the thinner the sharp zone — in macro it is measured in millimetres.</li>
+					<li><strong>Sensor size.</strong> Smaller sensors (phones, 1-inch, Micro Four Thirds) have more depth of field than full frame or medium format for the same equivalent framing.</li>
+				</ul>
+				<h2>How depth of field is calculated</h2>
+				<div class="formula">H = f + f² / (N · c)  — hyperfocal distance<br />near = H · s / (H + (s − f))<br />far = H · s / (H − (s − f)),  if s &lt; H, otherwise ∞<br />DoF = far − near</div>
+				<p>Here <em>f</em> is the focal length, <em>N</em> the f-number, <em>s</em> the focus distance and <em>c</em> the circle of confusion, taken as the sensor diagonal / 1500.</p>
+				<h2>DoF tables for your lens</h2>
+				<p>Ready-made depth of field and hyperfocal distance tables for Canon RF/EF, Nikon Z, Sony E, Fujifilm X, Micro Four Thirds, Sigma and Tamron lenses: <a href="lenses/">browse all lenses</a>.</p>
+				<h2>Free Android app</h2>
+				<p>Install PhotoSim on your phone — it works offline: <a href="https://github.com/Aleksandr-Kai/photosim/releases/download/v1.0.0/PhotoSim.apk" download>download the APK</a> (about 2.5&nbsp;MB), open it and allow installation from this source.</p>
+				<h2>FAQ</h2>
+				<details><summary>What is depth of field?</summary><p>Depth of field (DoF) is the distance between the nearest and farthest objects that look acceptably sharp in a photo. Everything outside that zone is progressively blurred.</p></details><details><summary>How do I increase depth of field?</summary><p>Stop the aperture down (higher f-number), use a shorter focal length, move away from the subject, or use a camera with a smaller sensor. You can test each change instantly in the calculator above.</p></details><details><summary>How do I get a blurry background?</summary><p>Open the aperture (f/1.4–f/2.8), use a longer focal length, move closer to the subject and increase the distance between the subject and the background.</p></details><details><summary>What is hyperfocal distance?</summary><p>The focus distance at which everything from half that distance to infinity is acceptably sharp — useful for landscapes.</p></details><details><summary>Which circle of confusion does the calculator use?</summary><p>The sensor diagonal divided by 1500 — about 0.029 mm on full frame.</p></details><details><summary>Is there an Android app?</summary><p>Yes. PhotoSim is a free Android app that works offline. Download the APK from this page.</p></details>
+			</article>
+
 
 			<footer>
 				<span>
@@ -508,6 +539,7 @@
 					>
 					<span data-i18n="onTelegram">on Telegram</span>
 				</span>
+				<a href="lenses/">Depth of field by lens</a>
 				<a href="ru/" hreflang="ru" lang="ru">Калькулятор ГРИП онлайн (русская версия)</a>
 				<a
 					href="https://github.com/Aleksandr-Kai/photosim"

@@ -4,14 +4,1824 @@
     <loc>https://aleksandr-kai.github.io/photosim/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/"/>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/"/>
+    <lastmod>2026-10-17</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://aleksandr-kai.github.io/photosim/ru/</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/"/>
-    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/"/>
+    <lastmod>2026-10-17</lastmod>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/rf16/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf16/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf16/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf16/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/rf16/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf16/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf16/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf16/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/rf24/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf24/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf24/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf24/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/rf24/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf24/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf24/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf24/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/rf35/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf35/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf35/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf35/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/rf35/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf35/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf35/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf35/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/rf50/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf50/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf50/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf50/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/rf50/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf50/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf50/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf50/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/rf50l/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf50l/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf50l/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf50l/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/rf50l/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf50l/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf50l/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf50l/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/rf85/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf85/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf85/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf85/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/rf85/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf85/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf85/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf85/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/rf85l/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf85l/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf85l/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf85l/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/rf85l/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf85l/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf85l/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf85l/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/rf100m/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf100m/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf100m/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf100m/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/rf100m/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf100m/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf100m/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf100m/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/rf135/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf135/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf135/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf135/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/rf135/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf135/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf135/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf135/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/rf600/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf600/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf600/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf600/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/rf600/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf600/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf600/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf600/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/rf1535/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf1535/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf1535/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf1535/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/rf1535/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf1535/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf1535/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf1535/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/rf2470/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf2470/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf2470/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf2470/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/rf2470/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf2470/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf2470/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf2470/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/rf24105/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf24105/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf24105/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf24105/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/rf24105/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf24105/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf24105/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf24105/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/rf70200/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf70200/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf70200/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf70200/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/rf70200/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf70200/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf70200/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf70200/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/rf100500/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf100500/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf100500/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf100500/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/rf100500/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rf100500/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rf100500/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rf100500/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/rfs1845/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rfs1845/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rfs1845/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rfs1845/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/rfs1845/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rfs1845/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rfs1845/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rfs1845/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/rfs18150/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rfs18150/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rfs18150/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rfs18150/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/rfs18150/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rfs18150/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rfs18150/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rfs18150/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/rfs55210/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rfs55210/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rfs55210/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rfs55210/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/rfs55210/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/rfs55210/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/rfs55210/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/rfs55210/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/ef35l/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef35l/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef35l/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef35l/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/ef35l/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef35l/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef35l/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef35l/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/ef50/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef50/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef50/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef50/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/ef50/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef50/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef50/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef50/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/ef50l/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef50l/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef50l/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef50l/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/ef50l/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef50l/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef50l/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef50l/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/ef85/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef85/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef85/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef85/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/ef85/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef85/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef85/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef85/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/ef85l/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef85l/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef85l/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef85l/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/ef85l/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef85l/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef85l/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef85l/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/ef100m/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef100m/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef100m/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef100m/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/ef100m/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef100m/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef100m/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef100m/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/ef135/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef135/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef135/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef135/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/ef135/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef135/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef135/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef135/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/ef1635/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef1635/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef1635/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef1635/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/ef1635/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef1635/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef1635/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef1635/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/ef2470/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef2470/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef2470/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef2470/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/ef2470/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef2470/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef2470/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef2470/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/ef24105/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef24105/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef24105/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef24105/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/ef24105/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef24105/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef24105/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef24105/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/ef70200/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef70200/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef70200/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef70200/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/ef70200/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef70200/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef70200/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef70200/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/ef100400/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef100400/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef100400/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef100400/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/ef100400/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef100400/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef100400/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef100400/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/ef400/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef400/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef400/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef400/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/ef400/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef400/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef400/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef400/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/ef600/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef600/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef600/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef600/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/ef600/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef600/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef600/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef600/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/efs24/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/efs24/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/efs24/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/efs24/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/efs24/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/efs24/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/efs24/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/efs24/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/efs1855/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/efs1855/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/efs1855/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/efs1855/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/efs1855/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/efs1855/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/efs1855/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/efs1855/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/efs18135/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/efs18135/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/efs18135/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/efs18135/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/efs18135/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/efs18135/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/efs18135/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/efs18135/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/efs55250/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/efs55250/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/efs55250/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/efs55250/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/efs55250/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/efs55250/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/efs55250/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/efs55250/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/efs1018/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/efs1018/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/efs1018/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/efs1018/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/efs1018/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/efs1018/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/efs1018/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/efs1018/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/z20/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z20/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z20/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z20/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/z20/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z20/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z20/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z20/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/z35/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z35/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z35/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z35/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/z35/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z35/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z35/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z35/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/z50/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z50/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z50/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z50/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/z50/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z50/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z50/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z50/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/z50f12/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z50f12/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z50f12/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z50f12/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/z50f12/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z50f12/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z50f12/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z50f12/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/z85/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z85/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z85/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z85/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/z85/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z85/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z85/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z85/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/z135/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z135/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z135/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z135/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/z135/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z135/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z135/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z135/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/z800/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z800/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z800/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z800/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/z800/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z800/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z800/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z800/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/z1424/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z1424/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z1424/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z1424/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/z1424/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z1424/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z1424/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z1424/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/z2470/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z2470/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z2470/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z2470/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/z2470/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z2470/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z2470/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z2470/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/z24120/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z24120/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z24120/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z24120/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/z24120/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z24120/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z24120/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z24120/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/z70200/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z70200/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z70200/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z70200/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/z70200/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z70200/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z70200/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z70200/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/z100400/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z100400/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z100400/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z100400/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/z100400/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/z100400/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/z100400/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/z100400/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/zdx1650/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/zdx1650/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/zdx1650/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/zdx1650/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/zdx1650/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/zdx1650/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/zdx1650/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/zdx1650/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/zdx18140/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/zdx18140/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/zdx18140/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/zdx18140/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/zdx18140/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/zdx18140/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/zdx18140/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/zdx18140/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/zdx50250/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/zdx50250/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/zdx50250/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/zdx50250/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/zdx50250/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/zdx50250/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/zdx50250/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/zdx50250/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/fe24/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe24/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe24/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe24/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/fe24/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe24/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe24/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe24/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/fe35/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe35/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe35/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe35/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/fe35/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe35/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe35/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe35/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/fe50/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe50/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe50/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe50/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/fe50/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe50/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe50/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe50/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/fe50gm/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe50gm/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe50gm/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe50gm/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/fe50gm/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe50gm/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe50gm/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe50gm/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/fe85/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe85/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe85/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe85/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/fe85/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe85/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe85/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe85/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/fe85gm/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe85gm/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe85gm/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe85gm/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/fe85gm/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe85gm/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe85gm/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe85gm/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/fe1635/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe1635/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe1635/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe1635/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/fe1635/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe1635/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe1635/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe1635/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/fe2470/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe2470/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe2470/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe2470/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/fe2470/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe2470/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe2470/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe2470/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/fe24105/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe24105/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe24105/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe24105/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/fe24105/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe24105/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe24105/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe24105/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/fe70200/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe70200/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe70200/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe70200/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/fe70200/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe70200/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe70200/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe70200/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/fe100400/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe100400/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe100400/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe100400/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/fe100400/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe100400/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe100400/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe100400/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/fe200600/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe200600/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe200600/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe200600/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/fe200600/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/fe200600/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/fe200600/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/fe200600/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/e11/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/e11/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/e11/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/e11/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/e11/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/e11/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/e11/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/e11/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/e15/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/e15/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/e15/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/e15/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/e15/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/e15/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/e15/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/e15/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/e1655/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/e1655/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/e1655/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/e1655/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/e1655/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/e1655/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/e1655/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/e1655/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/epz1650/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/epz1650/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/epz1650/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/epz1650/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/epz1650/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/epz1650/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/epz1650/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/epz1650/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/e18135/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/e18135/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/e18135/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/e18135/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/e18135/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/e18135/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/e18135/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/e18135/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/e55210/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/e55210/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/e55210/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/e55210/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/e55210/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/e55210/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/e55210/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/e55210/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/e70350/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/e70350/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/e70350/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/e70350/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/e70350/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/e70350/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/e70350/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/e70350/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/xf16/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf16/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf16/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf16/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/xf16/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf16/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf16/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf16/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/xf23/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf23/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf23/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf23/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/xf23/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf23/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf23/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf23/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/xf33/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf33/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf33/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf33/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/xf33/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf33/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf33/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf33/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/xf35/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf35/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf35/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf35/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/xf35/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf35/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf35/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf35/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/xf56/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf56/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf56/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf56/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/xf56/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf56/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf56/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf56/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/xf90/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf90/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf90/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf90/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/xf90/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf90/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf90/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf90/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/xf816/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf816/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf816/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf816/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/xf816/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf816/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf816/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf816/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/xf1655/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf1655/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf1655/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf1655/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/xf1655/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf1655/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf1655/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf1655/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/xf1855/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf1855/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf1855/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf1855/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/xf1855/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf1855/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf1855/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf1855/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/xf50140/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf50140/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf50140/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf50140/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/xf50140/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf50140/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf50140/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf50140/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/xf100400/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf100400/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf100400/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf100400/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/xf100400/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/xf100400/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/xf100400/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/xf100400/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/mz17/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/mz17/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/mz17/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/mz17/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/mz17/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/mz17/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/mz17/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/mz17/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/mz25/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/mz25/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/mz25/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/mz25/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/mz25/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/mz25/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/mz25/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/mz25/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/mz45/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/mz45/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/mz45/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/mz45/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/mz45/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/mz45/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/mz45/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/mz45/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/leica25/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/leica25/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/leica25/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/leica25/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/leica25/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/leica25/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/leica25/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/leica25/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/leica1260/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/leica1260/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/leica1260/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/leica1260/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/leica1260/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/leica1260/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/leica1260/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/leica1260/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/mz1240/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/mz1240/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/mz1240/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/mz1240/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/mz1240/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/mz1240/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/mz1240/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/mz1240/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/mz40150/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/mz40150/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/mz40150/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/mz40150/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/mz40150/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/mz40150/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/mz40150/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/mz40150/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/mz100400/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/mz100400/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/mz100400/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/mz100400/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/mz100400/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/mz100400/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/mz100400/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/mz100400/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/sig16/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig16/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig16/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig16/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/sig16/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig16/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig16/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig16/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/sig30/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig30/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig30/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig30/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/sig30/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig30/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig30/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig30/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/sig56/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig56/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig56/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig56/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/sig56/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig56/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig56/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig56/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/sig1835/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig1835/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig1835/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig1835/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/sig1835/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig1835/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig1835/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig1835/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/sig1850/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig1850/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig1850/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig1850/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/sig1850/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig1850/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig1850/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig1850/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/sig1770/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig1770/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig1770/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig1770/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/sig1770/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig1770/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig1770/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig1770/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/sig35/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig35/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig35/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig35/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/sig35/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig35/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig35/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig35/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/sig65/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig65/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig65/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig65/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/sig65/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig65/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig65/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig65/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/sig85/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig85/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig85/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig85/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/sig85/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig85/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig85/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig85/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/sig2470/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig2470/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig2470/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig2470/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/sig2470/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig2470/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig2470/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig2470/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/sig105/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig105/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig105/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig105/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/sig105/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig105/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig105/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig105/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/sig100400/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig100400/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig100400/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig100400/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/sig100400/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig100400/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig100400/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig100400/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/sig150600/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig150600/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig150600/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig150600/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/sig150600/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/sig150600/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/sig150600/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/sig150600/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/tam1120/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/tam1120/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/tam1120/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/tam1120/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/tam1120/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/tam1120/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/tam1120/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/tam1120/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/tam1770/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/tam1770/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/tam1770/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/tam1770/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/tam1770/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/tam1770/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/tam1770/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/tam1770/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/tam18300/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/tam18300/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/tam18300/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/tam18300/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/tam18300/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/tam18300/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/tam18300/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/tam18300/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/tam20/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/tam20/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/tam20/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/tam20/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/tam20/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/tam20/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/tam20/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/tam20/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/tam1728/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/tam1728/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/tam1728/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/tam1728/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/tam1728/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/tam1728/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/tam1728/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/tam1728/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/tam2875/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/tam2875/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/tam2875/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/tam2875/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/tam2875/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/tam2875/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/tam2875/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/tam2875/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/tam35150/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/tam35150/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/tam35150/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/tam35150/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/tam35150/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/tam35150/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/tam35150/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/tam35150/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/tam70180/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/tam70180/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/tam70180/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/tam70180/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/tam70180/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/tam70180/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/tam70180/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/tam70180/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/lenses/tam150500/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/tam150500/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/tam150500/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/tam150500/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aleksandr-kai.github.io/photosim/ru/lenses/tam150500/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/tam150500/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/tam150500/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/tam150500/"/>
+    <lastmod>2026-10-17</lastmod>
+    <priority>0.6</priority>
   </url>
 </urlset>

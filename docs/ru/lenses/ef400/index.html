@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Canon EF 400mm F2.8L IS III USM: калькулятор ГРИП и таблица глубины резкости | PhotoSim</title>
+<meta name="description" content="Калькулятор ГРИП для Canon EF 400mm F2.8L IS III USM: ближняя и дальняя границы резкости, гиперфокальное расстояние и глубина резкости при каждой диафрагме и расстоянии съёмки." />
+<link rel="canonical" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef400/" />
+<link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/ef400/" />
+<link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/ef400/" />
+<link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/ef400/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:site_name" content="PhotoSim" />
+<meta property="og:url" content="https://aleksandr-kai.github.io/photosim/ru/lenses/ef400/" />
+<meta property="og:title" content="Canon EF 400mm F2.8L IS III USM: калькулятор ГРИП и таблица глубины резкости | PhotoSim" />
+<meta property="og:description" content="Калькулятор ГРИП для Canon EF 400mm F2.8L IS III USM: ближняя и дальняя границы резкости, гиперфокальное расстояние и глубина резкости при каждой диафрагме и расстоянии съёмки." />
+<meta property="og:image" content="https://aleksandr-kai.github.io/photosim/assets/app-preview.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" type="image/png" href="../../../assets/favicon-64.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
+<style>
+			:root {
+				--bg: #e9edec;
+				--surface: #ffffff;
+				--surface-2: #dde3e1;
+				--border: #c3cbc8;
+				--text: #182220;
+				--text-dim: #5c6663;
+				--accent: #b0560e;
+				--accent-ink: #ffffff;
+				--accent-soft: #f0d9c2;
+				--band: #b3241f;
+				--shadow:
+					0 1px 2px rgba(20, 30, 28, 0.06),
+					0 16px 40px -20px rgba(20, 30, 28, 0.25);
+			}
+			@media (prefers-color-scheme: dark) {
+				:root {
+					--bg: #15181a;
+					--surface: #202426;
+					--surface-2: #2a2f31;
+					--border: #3c4144;
+					--text: #eae7e0;
+					--text-dim: #9ba09f;
+					--accent: #e8912f;
+					--accent-ink: #1a1204;
+					--accent-soft: rgba(232, 145, 47, 0.16);
+					--band: #ff6b5e;
+					--shadow:
+						0 1px 2px rgba(0, 0, 0, 0.3), 0 20px 50px -20px rgba(0, 0, 0, 0.6);
+				}
+			}
+			* {
+				box-sizing: border-box;
+			}
+			html {
+				font-size: clamp(15px, 13px + 0.4vw, 18px);
+			}
+			body {
+				margin: 0;
+				background: var(--bg);
+				color: var(--text);
+				font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+				-webkit-font-smoothing: antialiased;
+			}
+			.num {
+				font-family: "IBM Plex Mono", ui-monospace, monospace;
+				font-variant-numeric: tabular-nums;
+			}
+			a {
+				color: inherit;
+			}
+
+			.wrap {
+				position: relative;
+				width: min(100%, 100vw);
+				max-width: none;
+				margin: 0 auto;
+				padding: 3.5rem clamp(1.5rem, 3.5vw, 4rem) 4rem;
+			}
+			.hero-showcase {
+				display: grid;
+				grid-template-columns: minmax(0, 44rem) minmax(0, 26.5rem);
+				align-items: center;
+				gap: 0.75rem;
+				width: min(100%, 71.5rem);
+				margin: 0 0 2.5rem auto;
+			}
+
+			header.hero {
+				display: grid;
+				grid-template-columns: auto minmax(0, 1fr) auto;
+				align-items: center;
+				column-gap: 1.25rem;
+				row-gap: 0.75rem;
+				width: 100%;
+				margin: 0;
+				padding: 1.2rem 1.3rem 1.25rem;
+				background: rgba(32, 36, 38, 0.88);
+				border: 1px solid rgba(255, 255, 255, 0.08);
+				border-radius: 1.125rem;
+				box-shadow: 0 18px 40px -28px rgba(0, 0, 0, 0.18);
+			}
+			.app-preview {
+				display: block;
+				width: 100%;
+				height: auto;
+				aspect-ratio: 1280 / 558;
+				object-fit: cover;
+				border-radius: 0.75rem;
+				box-shadow: var(--shadow);
+			}
+			.lang-switch {
+				position: absolute;
+				top: 3.5rem;
+				left: clamp(1.5rem, 6vw, 5.5rem);
+				display: inline-flex;
+				align-items: center;
+				gap: 0.2rem;
+				padding: 0.2rem;
+				background: rgba(255, 255, 255, 0.05);
+				border: 1px solid rgba(255, 255, 255, 0.14);
+				border-radius: 999px;
+				backdrop-filter: blur(6px);
+			}
+			@media (max-width: 960px) {
+				.hero-showcase {
+					grid-template-columns: minmax(0, 44rem);
+					justify-content: center;
+					width: min(100%, 44rem);
+					margin: 0 auto 2.5rem;
+				}
+				.lang-switch {
+					top: 0.75rem;
+				}
+			}
+			.lang-tab {
+				appearance: none;
+				border: 0;
+				border-radius: 999px;
+				padding: 0.38rem 0.7rem;
+				background: transparent;
+				color: rgba(234, 231, 224, 0.75);
+				font: inherit;
+				font-size: 0.76rem;
+				font-weight: 600;
+				letter-spacing: 0.04em;
+				text-transform: uppercase;
+				cursor: pointer;
+				transition:
+					background 0.15s ease,
+					color 0.15s ease,
+					transform 0.15s ease;
+			}
+			.lang-tab:hover {
+				transform: translateY(-1px);
+			}
+			.lang-tab.is-active {
+				background: #f4f1ec;
+				color: #1a1204;
+				box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+			}
+			header.hero .hero-icon {
+				width: 5.5rem;
+				height: 5.5rem;
+				border-radius: 1.375rem;
+				box-shadow: var(--shadow);
+				grid-column: 1;
+				grid-row: 1 / span 2;
+			}
+			header.hero .hero-copy {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				text-align: left;
+				gap: 0.4rem;
+				grid-column: 2;
+				grid-row: 1;
+			}
+			header.hero h1 {
+				font-size: 2.1rem;
+				font-weight: 700;
+				letter-spacing: -0.01em;
+				margin: 0;
+				color: var(--text);
+			}
+			header.hero p.tagline {
+				margin: 0;
+				font-size: 1.05rem;
+				color: var(--text-dim);
+				max-width: 30rem;
+			}
+			header.hero .cta-wrap {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 0.6rem;
+				grid-column: 3;
+				grid-row: 1 / span 2;
+				justify-self: start;
+				align-self: center;
+				margin-top: 0;
+			}
+
+			.cta {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.6rem;
+				margin-top: 0;
+				padding: 0.95rem 1.75rem;
+				border-radius: 0.875rem;
+				background: var(--accent);
+				color: var(--accent-ink);
+				font-weight: 600;
+				font-size: 1.05rem;
+				text-decoration: none;
+				box-shadow: var(--shadow);
+				transition: transform 0.15s ease;
+			}
+			.cta:hover {
+				transform: translateY(-1px);
+			}
+			.cta svg {
+				flex: 0 0 auto;
+			}
+			.cta-meta {
+				margin-top: 0;
+				font-size: 0.8rem;
+				color: var(--text-dim);
+				white-space: nowrap;
+			}
+
+			.page-embed {
+				display: block;
+				width: 100%;
+				max-width: none;
+				height: 1280px;
+				border: 0;
+				border-radius: 1.125rem;
+				background: var(--surface);
+				box-shadow: var(--shadow);
+				margin: 0 auto 2.75rem;
+				scrollbar-width: none;
+				overflow: hidden;
+			}
+			.page-embed::-webkit-scrollbar {
+				display: none;
+			}
+
+			section {
+				margin-bottom: 2.75rem;
+			}
+			section h2 {
+				font-size: 1.3rem;
+				font-weight: 700;
+				margin: 0 0 0.9rem;
+				letter-spacing: -0.005em;
+			}
+			section p {
+				color: var(--text-dim);
+				line-height: 1.6;
+				margin: 0 0 0.75rem;
+			}
+
+			.features {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 0.75rem;
+			}
+			.features li {
+				background: var(--surface);
+				border: 1px solid var(--border);
+				border-radius: 0.75rem;
+				padding: 0.9rem 1rem;
+				font-size: 0.88rem;
+				line-height: 1.45;
+			}
+			.features li strong {
+				display: block;
+				margin-bottom: 0.2rem;
+			}
+			@media (max-width: 520px) {
+				.features {
+					grid-template-columns: 1fr;
+				}
+			}
+
+			.steps {
+				counter-reset: step;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				display: flex;
+				flex-direction: column;
+				gap: 0.75rem;
+			}
+			.steps li {
+				counter-increment: step;
+				display: flex;
+				gap: 0.9rem;
+				align-items: flex-start;
+				background: var(--surface);
+				border: 1px solid var(--border);
+				border-radius: 0.75rem;
+				padding: 0.9rem 1rem;
+			}
+			.steps li::before {
+				content: counter(step);
+				flex: 0 0 auto;
+				width: 1.6rem;
+				height: 1.6rem;
+				border-radius: 50%;
+				background: var(--accent-soft);
+				color: var(--accent);
+				font-weight: 700;
+				font-size: 0.85rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.steps li p {
+				margin: 0;
+				color: var(--text);
+				line-height: 1.5;
+			}
+			.steps li .note {
+				display: block;
+				margin-top: 0.2rem;
+				color: var(--text-dim);
+				font-size: 0.85rem;
+			}
+
+			.note-box {
+				background: var(--accent-soft);
+				border-radius: 0.75rem;
+				padding: 0.9rem 1rem;
+				font-size: 0.85rem;
+				color: var(--text);
+				line-height: 1.5;
+			}
+
+			footer {
+				border-top: 1px solid var(--border);
+				padding-top: 1.5rem;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				gap: 0.75rem;
+				font-size: 0.85rem;
+				color: var(--text-dim);
+			}
+			footer a {
+				color: var(--text);
+				text-decoration: none;
+			}
+			footer a:hover {
+				text-decoration: underline;
+			}
+		
+.lang-switch a.lang-tab{ text-decoration:none; display:inline-block; }
+article{ max-width:56rem; margin:0 auto; }
+article h2{ font-size:1.4rem; margin:2.2rem 0 .8rem; }
+article h3{ font-size:1.1rem; margin:1.4rem 0 .5rem; color:var(--text); }
+article p, article li{ color:var(--text-dim); line-height:1.7; }
+article ul, article ol{ padding-left:1.3rem; }
+.crumbs{ max-width:56rem; margin:0 auto 1rem; padding-top:2.6rem; font-size:.85rem; color:var(--text-dim); }
+.crumbs a{ color:var(--text-dim); }
+.hero-simple{ max-width:56rem; margin:0 auto 1.5rem; }
+.hero-simple h1{ font-size:1.9rem; line-height:1.25; margin:.2rem 0 .6rem; }
+.hero-simple p{ color:var(--text-dim); line-height:1.65; margin:0 0 .6rem; }
+.page-embed{ height:1280px; margin-bottom:1.5rem; }
+.table-wrap{ overflow-x:auto; margin-bottom:1rem; }
+table.dof{ width:100%; border-collapse:collapse; font-size:.85rem; background:var(--surface); border:1px solid var(--border); border-radius:.5rem; }
+table.dof th, table.dof td{ padding:.5rem .7rem; border-bottom:1px solid var(--border); text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; }
+table.dof th:first-child, table.dof td:first-child{ text-align:left; position:sticky; left:0; background:var(--surface); }
+table.dof thead th{ color:var(--text); font-weight:600; }
+table.dof td{ color:var(--text-dim); }
+.facts li strong{ color:var(--text); }
+details{ background:var(--surface); border:1px solid var(--border); border-radius:.75rem; padding:.8rem 1rem; margin-bottom:.6rem; }
+details summary{ cursor:pointer; font-weight:600; color:var(--text); }
+details p{ margin:.6rem 0 0; }
+.chips{ list-style:none; padding:0; margin:0; display:flex; flex-wrap:wrap; gap:.5rem; }
+.chips a{ display:inline-block; padding:.4rem .75rem; border:1px solid var(--border); border-radius:999px; background:var(--surface); color:var(--text); text-decoration:none; font-size:.85rem; }
+.chips a:hover{ border-color:var(--accent); }
+.cta-row{ margin:1rem 0 1.5rem; }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Какая глубина резкости у Canon EF 400mm F2.8L IS III USM на f/2.8 на расстоянии 3 м?","acceptedAnswer":{"@type":"Answer","text":"При 400 мм, f/2.8 и фокусировке на 3 м резкость простирается от 3.00 до 3.00 м — около 1 см."}},{"@type":"Question","name":"Чему равно гиперфокальное расстояние Canon EF 400mm F2.8L IS III USM?","acceptedAnswer":{"@type":"Answer","text":"При 400 мм и f/8 на матрице Full Frame гиперфокальное расстояние — около 694 м. Сфокусировавшись на нём, вы получите резкость от 347 м до бесконечности."}},{"@type":"Question","name":"Как получить более размытый фон на Canon EF 400mm F2.8L IS III USM?","acceptedAnswer":{"@type":"Answer","text":"Откройте диафрагму до f/2.8, подойдите ближе к объекту и увеличьте расстояние от объекта до фона. Проверить результат можно в калькуляторе выше."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"PhotoSim","item":"https://aleksandr-kai.github.io/photosim/ru/"},{"@type":"ListItem","position":2,"name":"Все объективы","item":"https://aleksandr-kai.github.io/photosim/ru/lenses/"},{"@type":"ListItem","position":3,"name":"Canon EF 400mm F2.8L IS III USM","item":"https://aleksandr-kai.github.io/photosim/ru/lenses/ef400/"}]}</script>
+</head>
+<body>
+<div class="wrap">
+<div class="lang-switch" aria-label="Выбор языка">
+	<a class="lang-tab" href="../../../lenses/ef400/" hreflang="en" lang="en">EN</a>
+	<a class="lang-tab is-active" href="./" hreflang="ru" lang="ru" aria-current="page">RU</a>
+</div>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../../ru/">PhotoSim</a> › <a href="../">Все объективы</a> › Canon EF 400mm F2.8L IS III USM</nav>
+<header class="hero-simple">
+<h1>Canon EF 400mm F2.8L IS III USM — калькулятор ГРИП</h1>
+<p>Canon EF 400mm F2.8L IS III USM — объектив с фиксированным фокусным расстоянием для системы «Canon EF (Full Frame DSLR)» с фокусным расстоянием 400 мм, светосилой f/2.8 и минимальной диафрагмой f/22. Ниже — готовый калькулятор глубины резко изображаемого пространства (ГРИП) и таблицы для типичных расстояний, рассчитанные по тем же формулам, что и в приложении PhotoSim.</p>
+<div class="cta-row"><a class="cta" href="https://github.com/Aleksandr-Kai/photosim/releases/download/v1.0.0/PhotoSim.apk" download>Скачать для Android (APK)</a> <span class="cta-meta num">v1.0.0 · Android 6.0+ · работает офлайн</span></div>
+</header>
+<iframe class="page-embed" src="../../../simulator.html?lens=ef400" title="Canon EF 400mm F2.8L IS III USM — калькулятор ГРИП" loading="lazy" scrolling="no" sandbox="allow-scripts allow-same-origin"></iframe>
+<script>const f=document.querySelector(".page-embed");f.addEventListener("load",()=>f.contentWindow?.postMessage({type:"photosim-language",language:"ru"},"*"));</script>
+<article>
+<h2>Ключевые цифры</h2>
+<ul class="facts"><li><strong>Система:</strong> Canon EF (Full Frame DSLR)</li><li><strong>Матрица:</strong> Full Frame, 36 × 24 мм</li><li><strong>Фокусное расстояние:</strong> 400 мм</li><li><strong>Диафрагма:</strong> f/2.8 … f/22</li><li><strong>ГРИП на 3 м, 400 мм, f/2.8:</strong> от 3.00 до 3.00 м (≈ 1 см)</li><li><strong>Гиперфокальное расстояние (400 мм, f/8):</strong> 694 м</li></ul>
+<h2>Таблица глубины резкости (ГРИП)</h2>
+<p>Расстояния отсчитываются от плоскости матрицы. В каждой ячейке — ближняя и дальняя границы приемлемой резкости в метрах (∞ — до бесконечности). Кружок нерезкости = диагональ матрицы / 1500.</p>
+<div class="table-wrap"><table class="dof"><thead><tr><th>Диафрагма</th><th>Гиперфокальное</th><th>1 м</th><th>2 м</th><th>3 м</th><th>5 м</th><th>10 м</th></tr></thead><tbody><tr><td>f/2.8</td><td>1981 м</td><td>1.00–1.00</td><td>2.00–2.00</td><td>3.00–3.00</td><td>4.99–5.01</td><td>9.95–10.0</td></tr><tr><td>f/4</td><td>1387 м</td><td>1.00–1.00</td><td>2.00–2.00</td><td>2.99–3.01</td><td>4.98–5.02</td><td>9.93–10.1</td></tr><tr><td>f/5.6</td><td>991 м</td><td>1.00–1.00</td><td>2.00–2.00</td><td>2.99–3.01</td><td>4.98–5.02</td><td>9.90–10.1</td></tr><tr><td>f/8</td><td>694 м</td><td>1.00–1.00</td><td>2.00–2.00</td><td>2.99–3.01</td><td>4.97–5.03</td><td>9.86–10.1</td></tr><tr><td>f/11</td><td>505 м</td><td>1.00–1.00</td><td>1.99–2.01</td><td>2.98–3.02</td><td>4.95–5.05</td><td>9.81–10.2</td></tr><tr><td>f/16</td><td>347 м</td><td>1.00–1.00</td><td>1.99–2.01</td><td>2.98–3.02</td><td>4.93–5.07</td><td>9.73–10.3</td></tr><tr><td>f/22</td><td>253 м</td><td>1.00–1.00</td><td>1.99–2.01</td><td>2.97–3.03</td><td>4.91–5.09</td><td>9.63–10.4</td></tr></tbody></table></div>
+<h2>Частые вопросы</h2>
+<details><summary>Какая глубина резкости у Canon EF 400mm F2.8L IS III USM на f/2.8 на расстоянии 3 м?</summary><p>При 400 мм, f/2.8 и фокусировке на 3 м резкость простирается от 3.00 до 3.00 м — около 1 см.</p></details>
+<details><summary>Чему равно гиперфокальное расстояние Canon EF 400mm F2.8L IS III USM?</summary><p>При 400 мм и f/8 на матрице Full Frame гиперфокальное расстояние — около 694 м. Сфокусировавшись на нём, вы получите резкость от 347 м до бесконечности.</p></details>
+<details><summary>Как получить более размытый фон на Canon EF 400mm F2.8L IS III USM?</summary><p>Откройте диафрагму до f/2.8, подойдите ближе к объекту и увеличьте расстояние от объекта до фона. Проверить результат можно в калькуляторе выше.</p></details>
+<h2>Другие объективы</h2>
+<ul class="chips"><li><a href="../ef35l/">Canon EF 35mm F1.4L II USM</a></li><li><a href="../ef50/">Canon EF 50mm F1.8 STM</a></li><li><a href="../ef50l/">Canon EF 50mm F1.2L USM</a></li><li><a href="../ef85/">Canon EF 85mm F1.8 USM</a></li><li><a href="../ef85l/">Canon EF 85mm F1.4L IS USM</a></li><li><a href="../ef100m/">Canon EF 100mm F2.8L Macro IS USM</a></li><li><a href="../ef135/">Canon EF 135mm F2L USM</a></li><li><a href="../ef1635/">Canon EF 16-35mm F2.8L III USM</a></li><li><a href="../ef2470/">Canon EF 24-70mm F2.8L II USM</a></li><li><a href="../ef24105/">Canon EF 24-105mm F4L IS II USM</a></li><li><a href="../ef70200/">Canon EF 70-200mm F2.8L IS III USM</a></li><li><a href="../ef100400/">Canon EF 100-400mm F4.5-5.6L IS II USM</a></li><li><a href="../">Все объективы →</a></li></ul>
+</article>
+<footer>
+<span>Автор <a href="https://t.me/aleksandr_kai" target="_blank" rel="noopener noreferrer">@aleksandr_kai</a> в Telegram</span>
+<a href="https://github.com/Aleksandr-Kai/photosim" target="_blank" rel="noopener noreferrer">Исходный код на GitHub</a>
+</footer>
+</div>
+</body>
+</html>

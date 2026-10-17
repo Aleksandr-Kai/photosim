@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Калькулятор ГРИП для объективов Canon, Nikon, Sony, Fujifilm, Sigma, Tamron | PhotoSim</title>
+<meta name="description" content="Таблицы глубины резкости (ГРИП) и гиперфокального расстояния для 112 реальных объективов Canon, Nikon, Sony, Fujifilm, Micro 4/3, Sigma и Tamron." />
+<link rel="canonical" href="https://aleksandr-kai.github.io/photosim/ru/lenses/" />
+<link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/" />
+<link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/" />
+<link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:site_name" content="PhotoSim" />
+<meta property="og:url" content="https://aleksandr-kai.github.io/photosim/ru/lenses/" />
+<meta property="og:title" content="Калькулятор ГРИП для объективов Canon, Nikon, Sony, Fujifilm, Sigma, Tamron | PhotoSim" />
+<meta property="og:description" content="Таблицы глубины резкости (ГРИП) и гиперфокального расстояния для 112 реальных объективов Canon, Nikon, Sony, Fujifilm, Micro 4/3, Sigma и Tamron." />
+<meta property="og:image" content="https://aleksandr-kai.github.io/photosim/assets/app-preview.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" type="image/png" href="../../assets/favicon-64.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
+<style>
+			:root {
+				--bg: #e9edec;
+				--surface: #ffffff;
+				--surface-2: #dde3e1;
+				--border: #c3cbc8;
+				--text: #182220;
+				--text-dim: #5c6663;
+				--accent: #b0560e;
+				--accent-ink: #ffffff;
+				--accent-soft: #f0d9c2;
+				--band: #b3241f;
+				--shadow:
+					0 1px 2px rgba(20, 30, 28, 0.06),
+					0 16px 40px -20px rgba(20, 30, 28, 0.25);
+			}
+			@media (prefers-color-scheme: dark) {
+				:root {
+					--bg: #15181a;
+					--surface: #202426;
+					--surface-2: #2a2f31;
+					--border: #3c4144;
+					--text: #eae7e0;
+					--text-dim: #9ba09f;
+					--accent: #e8912f;
+					--accent-ink: #1a1204;
+					--accent-soft: rgba(232, 145, 47, 0.16);
+					--band: #ff6b5e;
+					--shadow:
+						0 1px 2px rgba(0, 0, 0, 0.3), 0 20px 50px -20px rgba(0, 0, 0, 0.6);
+				}
+			}
+			* {
+				box-sizing: border-box;
+			}
+			html {
+				font-size: clamp(15px, 13px + 0.4vw, 18px);
+			}
+			body {
+				margin: 0;
+				background: var(--bg);
+				color: var(--text);
+				font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+				-webkit-font-smoothing: antialiased;
+			}
+			.num {
+				font-family: "IBM Plex Mono", ui-monospace, monospace;
+				font-variant-numeric: tabular-nums;
+			}
+			a {
+				color: inherit;
+			}
+
+			.wrap {
+				position: relative;
+				width: min(100%, 100vw);
+				max-width: none;
+				margin: 0 auto;
+				padding: 3.5rem clamp(1.5rem, 3.5vw, 4rem) 4rem;
+			}
+			.hero-showcase {
+				display: grid;
+				grid-template-columns: minmax(0, 44rem) minmax(0, 26.5rem);
+				align-items: center;
+				gap: 0.75rem;
+				width: min(100%, 71.5rem);
+				margin: 0 0 2.5rem auto;
+			}
+
+			header.hero {
+				display: grid;
+				grid-template-columns: auto minmax(0, 1fr) auto;
+				align-items: center;
+				column-gap: 1.25rem;
+				row-gap: 0.75rem;
+				width: 100%;
+				margin: 0;
+				padding: 1.2rem 1.3rem 1.25rem;
+				background: rgba(32, 36, 38, 0.88);
+				border: 1px solid rgba(255, 255, 255, 0.08);
+				border-radius: 1.125rem;
+				box-shadow: 0 18px 40px -28px rgba(0, 0, 0, 0.18);
+			}
+			.app-preview {
+				display: block;
+				width: 100%;
+				height: auto;
+				aspect-ratio: 1280 / 558;
+				object-fit: cover;
+				border-radius: 0.75rem;
+				box-shadow: var(--shadow);
+			}
+			.lang-switch {
+				position: absolute;
+				top: 3.5rem;
+				left: clamp(1.5rem, 6vw, 5.5rem);
+				display: inline-flex;
+				align-items: center;
+				gap: 0.2rem;
+				padding: 0.2rem;
+				background: rgba(255, 255, 255, 0.05);
+				border: 1px solid rgba(255, 255, 255, 0.14);
+				border-radius: 999px;
+				backdrop-filter: blur(6px);
+			}
+			@media (max-width: 960px) {
+				.hero-showcase {
+					grid-template-columns: minmax(0, 44rem);
+					justify-content: center;
+					width: min(100%, 44rem);
+					margin: 0 auto 2.5rem;
+				}
+				.lang-switch {
+					top: 0.75rem;
+				}
+			}
+			.lang-tab {
+				appearance: none;
+				border: 0;
+				border-radius: 999px;
+				padding: 0.38rem 0.7rem;
+				background: transparent;
+				color: rgba(234, 231, 224, 0.75);
+				font: inherit;
+				font-size: 0.76rem;
+				font-weight: 600;
+				letter-spacing: 0.04em;
+				text-transform: uppercase;
+				cursor: pointer;
+				transition:
+					background 0.15s ease,
+					color 0.15s ease,
+					transform 0.15s ease;
+			}
+			.lang-tab:hover {
+				transform: translateY(-1px);
+			}
+			.lang-tab.is-active {
+				background: #f4f1ec;
+				color: #1a1204;
+				box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+			}
+			header.hero .hero-icon {
+				width: 5.5rem;
+				height: 5.5rem;
+				border-radius: 1.375rem;
+				box-shadow: var(--shadow);
+				grid-column: 1;
+				grid-row: 1 / span 2;
+			}
+			header.hero .hero-copy {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				text-align: left;
+				gap: 0.4rem;
+				grid-column: 2;
+				grid-row: 1;
+			}
+			header.hero h1 {
+				font-size: 2.1rem;
+				font-weight: 700;
+				letter-spacing: -0.01em;
+				margin: 0;
+				color: var(--text);
+			}
+			header.hero p.tagline {
+				margin: 0;
+				font-size: 1.05rem;
+				color: var(--text-dim);
+				max-width: 30rem;
+			}
+			header.hero .cta-wrap {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 0.6rem;
+				grid-column: 3;
+				grid-row: 1 / span 2;
+				justify-self: start;
+				align-self: center;
+				margin-top: 0;
+			}
+
+			.cta {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.6rem;
+				margin-top: 0;
+				padding: 0.95rem 1.75rem;
+				border-radius: 0.875rem;
+				background: var(--accent);
+				color: var(--accent-ink);
+				font-weight: 600;
+				font-size: 1.05rem;
+				text-decoration: none;
+				box-shadow: var(--shadow);
+				transition: transform 0.15s ease;
+			}
+			.cta:hover {
+				transform: translateY(-1px);
+			}
+			.cta svg {
+				flex: 0 0 auto;
+			}
+			.cta-meta {
+				margin-top: 0;
+				font-size: 0.8rem;
+				color: var(--text-dim);
+				white-space: nowrap;
+			}
+
+			.page-embed {
+				display: block;
+				width: 100%;
+				max-width: none;
+				height: 1280px;
+				border: 0;
+				border-radius: 1.125rem;
+				background: var(--surface);
+				box-shadow: var(--shadow);
+				margin: 0 auto 2.75rem;
+				scrollbar-width: none;
+				overflow: hidden;
+			}
+			.page-embed::-webkit-scrollbar {
+				display: none;
+			}
+
+			section {
+				margin-bottom: 2.75rem;
+			}
+			section h2 {
+				font-size: 1.3rem;
+				font-weight: 700;
+				margin: 0 0 0.9rem;
+				letter-spacing: -0.005em;
+			}
+			section p {
+				color: var(--text-dim);
+				line-height: 1.6;
+				margin: 0 0 0.75rem;
+			}
+
+			.features {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 0.75rem;
+			}
+			.features li {
+				background: var(--surface);
+				border: 1px solid var(--border);
+				border-radius: 0.75rem;
+				padding: 0.9rem 1rem;
+				font-size: 0.88rem;
+				line-height: 1.45;
+			}
+			.features li strong {
+				display: block;
+				margin-bottom: 0.2rem;
+			}
+			@media (max-width: 520px) {
+				.features {
+					grid-template-columns: 1fr;
+				}
+			}
+
+			.steps {
+				counter-reset: step;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				display: flex;
+				flex-direction: column;
+				gap: 0.75rem;
+			}
+			.steps li {
+				counter-increment: step;
+				display: flex;
+				gap: 0.9rem;
+				align-items: flex-start;
+				background: var(--surface);
+				border: 1px solid var(--border);
+				border-radius: 0.75rem;
+				padding: 0.9rem 1rem;
+			}
+			.steps li::before {
+				content: counter(step);
+				flex: 0 0 auto;
+				width: 1.6rem;
+				height: 1.6rem;
+				border-radius: 50%;
+				background: var(--accent-soft);
+				color: var(--accent);
+				font-weight: 700;
+				font-size: 0.85rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.steps li p {
+				margin: 0;
+				color: var(--text);
+				line-height: 1.5;
+			}
+			.steps li .note {
+				display: block;
+				margin-top: 0.2rem;
+				color: var(--text-dim);
+				font-size: 0.85rem;
+			}
+
+			.note-box {
+				background: var(--accent-soft);
+				border-radius: 0.75rem;
+				padding: 0.9rem 1rem;
+				font-size: 0.85rem;
+				color: var(--text);
+				line-height: 1.5;
+			}
+
+			footer {
+				border-top: 1px solid var(--border);
+				padding-top: 1.5rem;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				gap: 0.75rem;
+				font-size: 0.85rem;
+				color: var(--text-dim);
+			}
+			footer a {
+				color: var(--text);
+				text-decoration: none;
+			}
+			footer a:hover {
+				text-decoration: underline;
+			}
+		
+.lang-switch a.lang-tab{ text-decoration:none; display:inline-block; }
+article{ max-width:56rem; margin:0 auto; }
+article h2{ font-size:1.4rem; margin:2.2rem 0 .8rem; }
+article h3{ font-size:1.1rem; margin:1.4rem 0 .5rem; color:var(--text); }
+article p, article li{ color:var(--text-dim); line-height:1.7; }
+article ul, article ol{ padding-left:1.3rem; }
+.crumbs{ max-width:56rem; margin:0 auto 1rem; padding-top:2.6rem; font-size:.85rem; color:var(--text-dim); }
+.crumbs a{ color:var(--text-dim); }
+.hero-simple{ max-width:56rem; margin:0 auto 1.5rem; }
+.hero-simple h1{ font-size:1.9rem; line-height:1.25; margin:.2rem 0 .6rem; }
+.hero-simple p{ color:var(--text-dim); line-height:1.65; margin:0 0 .6rem; }
+.page-embed{ height:1280px; margin-bottom:1.5rem; }
+.table-wrap{ overflow-x:auto; margin-bottom:1rem; }
+table.dof{ width:100%; border-collapse:collapse; font-size:.85rem; background:var(--surface); border:1px solid var(--border); border-radius:.5rem; }
+table.dof th, table.dof td{ padding:.5rem .7rem; border-bottom:1px solid var(--border); text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; }
+table.dof th:first-child, table.dof td:first-child{ text-align:left; position:sticky; left:0; background:var(--surface); }
+table.dof thead th{ color:var(--text); font-weight:600; }
+table.dof td{ color:var(--text-dim); }
+.facts li strong{ color:var(--text); }
+details{ background:var(--surface); border:1px solid var(--border); border-radius:.75rem; padding:.8rem 1rem; margin-bottom:.6rem; }
+details summary{ cursor:pointer; font-weight:600; color:var(--text); }
+details p{ margin:.6rem 0 0; }
+.chips{ list-style:none; padding:0; margin:0; display:flex; flex-wrap:wrap; gap:.5rem; }
+.chips a{ display:inline-block; padding:.4rem .75rem; border:1px solid var(--border); border-radius:999px; background:var(--surface); color:var(--text); text-decoration:none; font-size:.85rem; }
+.chips a:hover{ border-color:var(--accent); }
+.cta-row{ margin:1rem 0 1.5rem; }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Калькулятор ГРИП для объективов Canon, Nikon, Sony, Fujifilm, Sigma, Tamron | PhotoSim","url":"https://aleksandr-kai.github.io/photosim/ru/lenses/","inLanguage":"ru","mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/rf16/","name":"Canon RF 16mm F2.8 STM"},{"@type":"ListItem","position":2,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/rf24/","name":"Canon RF 24mm F1.8 Macro IS STM"},{"@type":"ListItem","position":3,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/rf35/","name":"Canon RF 35mm F1.8 Macro IS STM"},{"@type":"ListItem","position":4,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/rf50/","name":"Canon RF 50mm F1.8 STM"},{"@type":"ListItem","position":5,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/rf50l/","name":"Canon RF 50mm F1.2L USM"},{"@type":"ListItem","position":6,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/rf85/","name":"Canon RF 85mm F2 Macro IS STM"},{"@type":"ListItem","position":7,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/rf85l/","name":"Canon RF 85mm F1.2L USM"},{"@type":"ListItem","position":8,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/rf100m/","name":"Canon RF 100mm F2.8L Macro IS USM"},{"@type":"ListItem","position":9,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/rf135/","name":"Canon RF 135mm F1.8L IS USM"},{"@type":"ListItem","position":10,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/rf600/","name":"Canon RF 600mm F11 IS STM"},{"@type":"ListItem","position":11,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/rf1535/","name":"Canon RF 15-35mm F2.8L IS USM"},{"@type":"ListItem","position":12,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/rf2470/","name":"Canon RF 24-70mm F2.8L IS USM"},{"@type":"ListItem","position":13,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/rf24105/","name":"Canon RF 24-105mm F4L IS USM"},{"@type":"ListItem","position":14,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/rf70200/","name":"Canon RF 70-200mm F2.8L IS USM"},{"@type":"ListItem","position":15,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/rf100500/","name":"Canon RF 100-500mm F4.5-7.1L IS USM"},{"@type":"ListItem","position":16,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/rfs1845/","name":"Canon RF-S 18-45mm F4.5-6.3 IS STM"},{"@type":"ListItem","position":17,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/rfs18150/","name":"Canon RF-S 18-150mm F3.5-6.3 IS STM"},{"@type":"ListItem","position":18,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/rfs55210/","name":"Canon RF-S 55-210mm F5-7.1 IS STM"},{"@type":"ListItem","position":19,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/ef35l/","name":"Canon EF 35mm F1.4L II USM"},{"@type":"ListItem","position":20,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/ef50/","name":"Canon EF 50mm F1.8 STM"},{"@type":"ListItem","position":21,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/ef50l/","name":"Canon EF 50mm F1.2L USM"},{"@type":"ListItem","position":22,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/ef85/","name":"Canon EF 85mm F1.8 USM"},{"@type":"ListItem","position":23,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/ef85l/","name":"Canon EF 85mm F1.4L IS USM"},{"@type":"ListItem","position":24,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/ef100m/","name":"Canon EF 100mm F2.8L Macro IS USM"},{"@type":"ListItem","position":25,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/ef135/","name":"Canon EF 135mm F2L USM"},{"@type":"ListItem","position":26,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/ef1635/","name":"Canon EF 16-35mm F2.8L III USM"},{"@type":"ListItem","position":27,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/ef2470/","name":"Canon EF 24-70mm F2.8L II USM"},{"@type":"ListItem","position":28,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/ef24105/","name":"Canon EF 24-105mm F4L IS II USM"},{"@type":"ListItem","position":29,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/ef70200/","name":"Canon EF 70-200mm F2.8L IS III USM"},{"@type":"ListItem","position":30,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/ef100400/","name":"Canon EF 100-400mm F4.5-5.6L IS II USM"},{"@type":"ListItem","position":31,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/ef400/","name":"Canon EF 400mm F2.8L IS III USM"},{"@type":"ListItem","position":32,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/ef600/","name":"Canon EF 600mm F4L IS III USM"},{"@type":"ListItem","position":33,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/efs24/","name":"Canon EF-S 24mm F2.8 STM"},{"@type":"ListItem","position":34,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/efs1855/","name":"Canon EF-S 18-55mm F3.5-5.6 IS STM"},{"@type":"ListItem","position":35,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/efs18135/","name":"Canon EF-S 18-135mm F3.5-5.6 IS USM"},{"@type":"ListItem","position":36,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/efs55250/","name":"Canon EF-S 55-250mm F4-5.6 IS STM"},{"@type":"ListItem","position":37,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/efs1018/","name":"Canon EF-S 10-18mm F4.5-5.6 IS STM"},{"@type":"ListItem","position":38,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/z20/","name":"Nikon Z 20mm f/1.8 S"},{"@type":"ListItem","position":39,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/z35/","name":"Nikon Z 35mm f/1.8 S"},{"@type":"ListItem","position":40,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/z50/","name":"Nikon Z 50mm f/1.8 S"},{"@type":"ListItem","position":41,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/z50f12/","name":"Nikon Z 50mm f/1.2 S"},{"@type":"ListItem","position":42,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/z85/","name":"Nikon Z 85mm f/1.8 S"},{"@type":"ListItem","position":43,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/z135/","name":"Nikon Z 135mm f/1.8 S Plena"},{"@type":"ListItem","position":44,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/z800/","name":"Nikon Z 800mm f/6.3 VR S"},{"@type":"ListItem","position":45,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/z1424/","name":"Nikon Z 14-24mm f/2.8 S"},{"@type":"ListItem","position":46,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/z2470/","name":"Nikon Z 24-70mm f/2.8 S"},{"@type":"ListItem","position":47,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/z24120/","name":"Nikon Z 24-120mm f/4 S"},{"@type":"ListItem","position":48,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/z70200/","name":"Nikon Z 70-200mm f/2.8 VR S"},{"@type":"ListItem","position":49,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/z100400/","name":"Nikon Z 100-400mm f/4.5-5.6 VR S"},{"@type":"ListItem","position":50,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/zdx1650/","name":"Nikon Z DX 16-50mm f/3.5-6.3 VR"},{"@type":"ListItem","position":51,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/zdx18140/","name":"Nikon Z DX 18-140mm f/3.5-6.3 VR"},{"@type":"ListItem","position":52,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/zdx50250/","name":"Nikon Z DX 50-250mm f/4.5-6.3 VR"},{"@type":"ListItem","position":53,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/fe24/","name":"Sony FE 24mm F1.4 GM"},{"@type":"ListItem","position":54,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/fe35/","name":"Sony FE 35mm F1.8"},{"@type":"ListItem","position":55,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/fe50/","name":"Sony FE 50mm F1.8"},{"@type":"ListItem","position":56,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/fe50gm/","name":"Sony FE 50mm F1.2 GM"},{"@type":"ListItem","position":57,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/fe85/","name":"Sony FE 85mm F1.8"},{"@type":"ListItem","position":58,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/fe85gm/","name":"Sony FE 85mm F1.4 GM II"},{"@type":"ListItem","position":59,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/fe1635/","name":"Sony FE 16-35mm F2.8 GM II"},{"@type":"ListItem","position":60,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/fe2470/","name":"Sony FE 24-70mm F2.8 GM II"},{"@type":"ListItem","position":61,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/fe24105/","name":"Sony FE 24-105mm F4 G OSS"},{"@type":"ListItem","position":62,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/fe70200/","name":"Sony FE 70-200mm F2.8 GM OSS II"},{"@type":"ListItem","position":63,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/fe100400/","name":"Sony FE 100-400mm F4.5-5.6 GM OSS"},{"@type":"ListItem","position":64,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/fe200600/","name":"Sony FE 200-600mm F5.6-6.3 G OSS"},{"@type":"ListItem","position":65,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/e11/","name":"Sony E 11mm F1.8"},{"@type":"ListItem","position":66,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/e15/","name":"Sony E 15mm F1.4 G"},{"@type":"ListItem","position":67,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/e1655/","name":"Sony E 16-55mm F2.8 G"},{"@type":"ListItem","position":68,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/epz1650/","name":"Sony E PZ 16-50mm F3.5-5.6 OSS"},{"@type":"ListItem","position":69,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/e18135/","name":"Sony E 18-135mm F3.5-5.6 OSS"},{"@type":"ListItem","position":70,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/e55210/","name":"Sony E 55-210mm F4.5-6.3 OSS"},{"@type":"ListItem","position":71,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/e70350/","name":"Sony E 70-350mm F4.5-6.3 G OSS"},{"@type":"ListItem","position":72,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/xf16/","name":"Fujifilm XF 16mm F1.4 R WR"},{"@type":"ListItem","position":73,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/xf23/","name":"Fujifilm XF 23mm F1.4 R LM WR"},{"@type":"ListItem","position":74,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/xf33/","name":"Fujifilm XF 33mm F1.4 R LM WR"},{"@type":"ListItem","position":75,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/xf35/","name":"Fujifilm XF 35mm F1.4 R"},{"@type":"ListItem","position":76,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/xf56/","name":"Fujifilm XF 56mm F1.2 R"},{"@type":"ListItem","position":77,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/xf90/","name":"Fujifilm XF 90mm F2 R LM WR"},{"@type":"ListItem","position":78,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/xf816/","name":"Fujifilm XF 8-16mm F2.8 R LM WR"},{"@type":"ListItem","position":79,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/xf1655/","name":"Fujifilm XF 16-55mm F2.8 R LM WR"},{"@type":"ListItem","position":80,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/xf1855/","name":"Fujifilm XF 18-55mm F2.8-4 R LM OIS"},{"@type":"ListItem","position":81,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/xf50140/","name":"Fujifilm XF 50-140mm F2.8 R LM OIS WR"},{"@type":"ListItem","position":82,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/xf100400/","name":"Fujifilm XF 100-400mm F4.5-5.6 R LM OIS WR"},{"@type":"ListItem","position":83,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/mz17/","name":"Olympus M.Zuiko 17mm F1.8"},{"@type":"ListItem","position":84,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/mz25/","name":"Olympus M.Zuiko 25mm F1.8"},{"@type":"ListItem","position":85,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/mz45/","name":"Olympus M.Zuiko 45mm F1.8"},{"@type":"ListItem","position":86,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/leica25/","name":"Leica DG 25mm F1.4"},{"@type":"ListItem","position":87,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/leica1260/","name":"Leica DG 12-60mm F2.8-4"},{"@type":"ListItem","position":88,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/mz1240/","name":"Olympus M.Zuiko 12-40mm F2.8 PRO II"},{"@type":"ListItem","position":89,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/mz40150/","name":"Olympus M.Zuiko 40-150mm F2.8 PRO"},{"@type":"ListItem","position":90,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/mz100400/","name":"Olympus M.Zuiko 100-400mm F5-6.3 IS"},{"@type":"ListItem","position":91,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/sig16/","name":"Sigma 16mm F1.4 DC DN"},{"@type":"ListItem","position":92,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/sig30/","name":"Sigma 30mm F1.4 DC DN"},{"@type":"ListItem","position":93,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/sig56/","name":"Sigma 56mm F1.4 DC DN"},{"@type":"ListItem","position":94,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/sig1835/","name":"Sigma 18-35mm F1.8 DC HSM Art"},{"@type":"ListItem","position":95,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/sig1850/","name":"Sigma 18-50mm F2.8 DC DN"},{"@type":"ListItem","position":96,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/sig1770/","name":"Sigma 17-70mm F2.8-4 DC DN"},{"@type":"ListItem","position":97,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/sig35/","name":"Sigma 35mm F1.4 DG HSM Art"},{"@type":"ListItem","position":98,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/sig65/","name":"Sigma 65mm F2 DG DN Contemporary"},{"@type":"ListItem","position":99,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/sig85/","name":"Sigma 85mm F1.4 DG DN Art"},{"@type":"ListItem","position":100,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/sig2470/","name":"Sigma 24-70mm F2.8 DG DN Art"},{"@type":"ListItem","position":101,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/sig105/","name":"Sigma 105mm F1.4 DG HSM Art"},{"@type":"ListItem","position":102,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/sig100400/","name":"Sigma 100-400mm F5-6.3 DG DN OS"},{"@type":"ListItem","position":103,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/sig150600/","name":"Sigma 150-600mm F5-6.3 DG DN OS Sport"},{"@type":"ListItem","position":104,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/tam1120/","name":"Tamron 11-20mm F2.8 Di III-A RXD"},{"@type":"ListItem","position":105,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/tam1770/","name":"Tamron 17-70mm F2.8 Di III-A VC RXD"},{"@type":"ListItem","position":106,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/tam18300/","name":"Tamron 18-300mm F3.5-6.3 Di III-A VC VXD"},{"@type":"ListItem","position":107,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/tam20/","name":"Tamron 20mm F2.8 Di III OSD"},{"@type":"ListItem","position":108,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/tam1728/","name":"Tamron 17-28mm F2.8 Di III RXD"},{"@type":"ListItem","position":109,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/tam2875/","name":"Tamron 28-75mm F2.8 Di III VXD G2"},{"@type":"ListItem","position":110,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/tam35150/","name":"Tamron 35-150mm F2-2.8 Di III VXD"},{"@type":"ListItem","position":111,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/tam70180/","name":"Tamron 70-180mm F2.8 Di III VXD G2"},{"@type":"ListItem","position":112,"url":"https://aleksandr-kai.github.io/photosim/ru/lenses/tam150500/","name":"Tamron 150-500mm F5-6.7 Di III VC VXD"}]}}</script>
+</head>
+<body>
+<div class="wrap">
+<div class="lang-switch" aria-label="Выбор языка">
+	<a class="lang-tab" href="../../lenses/" hreflang="en" lang="en">EN</a>
+	<a class="lang-tab is-active" href="./" hreflang="ru" lang="ru" aria-current="page">RU</a>
+</div>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../ru/">PhotoSim</a> › Все объективы</nav>
+<header class="hero-simple">
+<h1>Калькулятор ГРИП для объективов</h1>
+<p>Выберите объектив, чтобы увидеть таблицу ГРИП, гиперфокальное расстояние и интерактивный калькулятор глубины резкости. Все значения считаются для реального диапазона диафрагм и фокусных расстояний каждой модели.</p>
+</header>
+<article>
+<h2>Canon RF (Full Frame)</h2><ul class="chips"><li><a href="rf16/">Canon RF 16mm F2.8 STM</a></li><li><a href="rf24/">Canon RF 24mm F1.8 Macro IS STM</a></li><li><a href="rf35/">Canon RF 35mm F1.8 Macro IS STM</a></li><li><a href="rf50/">Canon RF 50mm F1.8 STM</a></li><li><a href="rf50l/">Canon RF 50mm F1.2L USM</a></li><li><a href="rf85/">Canon RF 85mm F2 Macro IS STM</a></li><li><a href="rf85l/">Canon RF 85mm F1.2L USM</a></li><li><a href="rf100m/">Canon RF 100mm F2.8L Macro IS USM</a></li><li><a href="rf135/">Canon RF 135mm F1.8L IS USM</a></li><li><a href="rf600/">Canon RF 600mm F11 IS STM</a></li><li><a href="rf1535/">Canon RF 15-35mm F2.8L IS USM</a></li><li><a href="rf2470/">Canon RF 24-70mm F2.8L IS USM</a></li><li><a href="rf24105/">Canon RF 24-105mm F4L IS USM</a></li><li><a href="rf70200/">Canon RF 70-200mm F2.8L IS USM</a></li><li><a href="rf100500/">Canon RF 100-500mm F4.5-7.1L IS USM</a></li></ul>
+<h2>Canon RF-S (APS-C)</h2><ul class="chips"><li><a href="rfs1845/">Canon RF-S 18-45mm F4.5-6.3 IS STM</a></li><li><a href="rfs18150/">Canon RF-S 18-150mm F3.5-6.3 IS STM</a></li><li><a href="rfs55210/">Canon RF-S 55-210mm F5-7.1 IS STM</a></li></ul>
+<h2>Canon EF (Full Frame DSLR)</h2><ul class="chips"><li><a href="ef35l/">Canon EF 35mm F1.4L II USM</a></li><li><a href="ef50/">Canon EF 50mm F1.8 STM</a></li><li><a href="ef50l/">Canon EF 50mm F1.2L USM</a></li><li><a href="ef85/">Canon EF 85mm F1.8 USM</a></li><li><a href="ef85l/">Canon EF 85mm F1.4L IS USM</a></li><li><a href="ef100m/">Canon EF 100mm F2.8L Macro IS USM</a></li><li><a href="ef135/">Canon EF 135mm F2L USM</a></li><li><a href="ef1635/">Canon EF 16-35mm F2.8L III USM</a></li><li><a href="ef2470/">Canon EF 24-70mm F2.8L II USM</a></li><li><a href="ef24105/">Canon EF 24-105mm F4L IS II USM</a></li><li><a href="ef70200/">Canon EF 70-200mm F2.8L IS III USM</a></li><li><a href="ef100400/">Canon EF 100-400mm F4.5-5.6L IS II USM</a></li><li><a href="ef400/">Canon EF 400mm F2.8L IS III USM</a></li><li><a href="ef600/">Canon EF 600mm F4L IS III USM</a></li></ul>
+<h2>Canon EF-S (APS-C DSLR)</h2><ul class="chips"><li><a href="efs24/">Canon EF-S 24mm F2.8 STM</a></li><li><a href="efs1855/">Canon EF-S 18-55mm F3.5-5.6 IS STM</a></li><li><a href="efs18135/">Canon EF-S 18-135mm F3.5-5.6 IS USM</a></li><li><a href="efs55250/">Canon EF-S 55-250mm F4-5.6 IS STM</a></li><li><a href="efs1018/">Canon EF-S 10-18mm F4.5-5.6 IS STM</a></li></ul>
+<h2>Nikon Z (Full Frame)</h2><ul class="chips"><li><a href="z20/">Nikon Z 20mm f/1.8 S</a></li><li><a href="z35/">Nikon Z 35mm f/1.8 S</a></li><li><a href="z50/">Nikon Z 50mm f/1.8 S</a></li><li><a href="z50f12/">Nikon Z 50mm f/1.2 S</a></li><li><a href="z85/">Nikon Z 85mm f/1.8 S</a></li><li><a href="z135/">Nikon Z 135mm f/1.8 S Plena</a></li><li><a href="z800/">Nikon Z 800mm f/6.3 VR S</a></li><li><a href="z1424/">Nikon Z 14-24mm f/2.8 S</a></li><li><a href="z2470/">Nikon Z 24-70mm f/2.8 S</a></li><li><a href="z24120/">Nikon Z 24-120mm f/4 S</a></li><li><a href="z70200/">Nikon Z 70-200mm f/2.8 VR S</a></li><li><a href="z100400/">Nikon Z 100-400mm f/4.5-5.6 VR S</a></li></ul>
+<h2>Nikon Z DX (APS-C)</h2><ul class="chips"><li><a href="zdx1650/">Nikon Z DX 16-50mm f/3.5-6.3 VR</a></li><li><a href="zdx18140/">Nikon Z DX 18-140mm f/3.5-6.3 VR</a></li><li><a href="zdx50250/">Nikon Z DX 50-250mm f/4.5-6.3 VR</a></li></ul>
+<h2>Sony E (Full Frame)</h2><ul class="chips"><li><a href="fe24/">Sony FE 24mm F1.4 GM</a></li><li><a href="fe35/">Sony FE 35mm F1.8</a></li><li><a href="fe50/">Sony FE 50mm F1.8</a></li><li><a href="fe50gm/">Sony FE 50mm F1.2 GM</a></li><li><a href="fe85/">Sony FE 85mm F1.8</a></li><li><a href="fe85gm/">Sony FE 85mm F1.4 GM II</a></li><li><a href="fe1635/">Sony FE 16-35mm F2.8 GM II</a></li><li><a href="fe2470/">Sony FE 24-70mm F2.8 GM II</a></li><li><a href="fe24105/">Sony FE 24-105mm F4 G OSS</a></li><li><a href="fe70200/">Sony FE 70-200mm F2.8 GM OSS II</a></li><li><a href="fe100400/">Sony FE 100-400mm F4.5-5.6 GM OSS</a></li><li><a href="fe200600/">Sony FE 200-600mm F5.6-6.3 G OSS</a></li></ul>
+<h2>Sony E (APS-C)</h2><ul class="chips"><li><a href="e11/">Sony E 11mm F1.8</a></li><li><a href="e15/">Sony E 15mm F1.4 G</a></li><li><a href="e1655/">Sony E 16-55mm F2.8 G</a></li><li><a href="epz1650/">Sony E PZ 16-50mm F3.5-5.6 OSS</a></li><li><a href="e18135/">Sony E 18-135mm F3.5-5.6 OSS</a></li><li><a href="e55210/">Sony E 55-210mm F4.5-6.3 OSS</a></li><li><a href="e70350/">Sony E 70-350mm F4.5-6.3 G OSS</a></li></ul>
+<h2>Fujifilm X (APS-C)</h2><ul class="chips"><li><a href="xf16/">Fujifilm XF 16mm F1.4 R WR</a></li><li><a href="xf23/">Fujifilm XF 23mm F1.4 R LM WR</a></li><li><a href="xf33/">Fujifilm XF 33mm F1.4 R LM WR</a></li><li><a href="xf35/">Fujifilm XF 35mm F1.4 R</a></li><li><a href="xf56/">Fujifilm XF 56mm F1.2 R</a></li><li><a href="xf90/">Fujifilm XF 90mm F2 R LM WR</a></li><li><a href="xf816/">Fujifilm XF 8-16mm F2.8 R LM WR</a></li><li><a href="xf1655/">Fujifilm XF 16-55mm F2.8 R LM WR</a></li><li><a href="xf1855/">Fujifilm XF 18-55mm F2.8-4 R LM OIS</a></li><li><a href="xf50140/">Fujifilm XF 50-140mm F2.8 R LM OIS WR</a></li><li><a href="xf100400/">Fujifilm XF 100-400mm F4.5-5.6 R LM OIS WR</a></li></ul>
+<h2>Micro Four Thirds</h2><ul class="chips"><li><a href="mz17/">Olympus M.Zuiko 17mm F1.8</a></li><li><a href="mz25/">Olympus M.Zuiko 25mm F1.8</a></li><li><a href="mz45/">Olympus M.Zuiko 45mm F1.8</a></li><li><a href="leica25/">Leica DG 25mm F1.4</a></li><li><a href="leica1260/">Leica DG 12-60mm F2.8-4</a></li><li><a href="mz1240/">Olympus M.Zuiko 12-40mm F2.8 PRO II</a></li><li><a href="mz40150/">Olympus M.Zuiko 40-150mm F2.8 PRO</a></li><li><a href="mz100400/">Olympus M.Zuiko 100-400mm F5-6.3 IS</a></li></ul>
+<h2>Third-Party (Various Mounts)</h2><ul class="chips"><li><a href="sig16/">Sigma 16mm F1.4 DC DN</a></li><li><a href="sig30/">Sigma 30mm F1.4 DC DN</a></li><li><a href="sig56/">Sigma 56mm F1.4 DC DN</a></li><li><a href="sig1835/">Sigma 18-35mm F1.8 DC HSM Art</a></li><li><a href="sig1850/">Sigma 18-50mm F2.8 DC DN</a></li><li><a href="sig1770/">Sigma 17-70mm F2.8-4 DC DN</a></li><li><a href="sig35/">Sigma 35mm F1.4 DG HSM Art</a></li><li><a href="sig65/">Sigma 65mm F2 DG DN Contemporary</a></li><li><a href="sig85/">Sigma 85mm F1.4 DG DN Art</a></li><li><a href="sig2470/">Sigma 24-70mm F2.8 DG DN Art</a></li><li><a href="sig105/">Sigma 105mm F1.4 DG HSM Art</a></li><li><a href="sig100400/">Sigma 100-400mm F5-6.3 DG DN OS</a></li><li><a href="sig150600/">Sigma 150-600mm F5-6.3 DG DN OS Sport</a></li><li><a href="tam1120/">Tamron 11-20mm F2.8 Di III-A RXD</a></li><li><a href="tam1770/">Tamron 17-70mm F2.8 Di III-A VC RXD</a></li><li><a href="tam18300/">Tamron 18-300mm F3.5-6.3 Di III-A VC VXD</a></li><li><a href="tam20/">Tamron 20mm F2.8 Di III OSD</a></li><li><a href="tam1728/">Tamron 17-28mm F2.8 Di III RXD</a></li><li><a href="tam2875/">Tamron 28-75mm F2.8 Di III VXD G2</a></li><li><a href="tam35150/">Tamron 35-150mm F2-2.8 Di III VXD</a></li><li><a href="tam70180/">Tamron 70-180mm F2.8 Di III VXD G2</a></li><li><a href="tam150500/">Tamron 150-500mm F5-6.7 Di III VC VXD</a></li></ul>
+</article>
+<footer>
+<span>Автор <a href="https://t.me/aleksandr_kai" target="_blank" rel="noopener noreferrer">@aleksandr_kai</a> в Telegram</span>
+<a href="https://github.com/Aleksandr-Kai/photosim" target="_blank" rel="noopener noreferrer">Исходный код на GitHub</a>
+</footer>
+</div>
+</body>
+</html>

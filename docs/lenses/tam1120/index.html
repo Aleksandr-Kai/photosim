@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tamron 11-20mm F2.8 Di III-A RXD Depth of Field Calculator &amp; DoF Table | PhotoSim</title>
+<meta name="description" content="Depth of field calculator and DoF table for the Tamron 11-20mm F2.8 Di III-A RXD: near and far focus limits, hyperfocal distance and total depth of field at every aperture and shooting distance." />
+<link rel="canonical" href="https://aleksandr-kai.github.io/photosim/lenses/tam1120/" />
+<link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/lenses/tam1120/" />
+<link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/lenses/tam1120/" />
+<link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/lenses/tam1120/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="PhotoSim" />
+<meta property="og:url" content="https://aleksandr-kai.github.io/photosim/lenses/tam1120/" />
+<meta property="og:title" content="Tamron 11-20mm F2.8 Di III-A RXD Depth of Field Calculator &amp; DoF Table | PhotoSim" />
+<meta property="og:description" content="Depth of field calculator and DoF table for the Tamron 11-20mm F2.8 Di III-A RXD: near and far focus limits, hyperfocal distance and total depth of field at every aperture and shooting distance." />
+<meta property="og:image" content="https://aleksandr-kai.github.io/photosim/assets/app-preview.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" type="image/png" href="../../assets/favicon-64.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
+<style>
+			:root {
+				--bg: #e9edec;
+				--surface: #ffffff;
+				--surface-2: #dde3e1;
+				--border: #c3cbc8;
+				--text: #182220;
+				--text-dim: #5c6663;
+				--accent: #b0560e;
+				--accent-ink: #ffffff;
+				--accent-soft: #f0d9c2;
+				--band: #b3241f;
+				--shadow:
+					0 1px 2px rgba(20, 30, 28, 0.06),
+					0 16px 40px -20px rgba(20, 30, 28, 0.25);
+			}
+			@media (prefers-color-scheme: dark) {
+				:root {
+					--bg: #15181a;
+					--surface: #202426;
+					--surface-2: #2a2f31;
+					--border: #3c4144;
+					--text: #eae7e0;
+					--text-dim: #9ba09f;
+					--accent: #e8912f;
+					--accent-ink: #1a1204;
+					--accent-soft: rgba(232, 145, 47, 0.16);
+					--band: #ff6b5e;
+					--shadow:
+						0 1px 2px rgba(0, 0, 0, 0.3), 0 20px 50px -20px rgba(0, 0, 0, 0.6);
+				}
+			}
+			* {
+				box-sizing: border-box;
+			}
+			html {
+				font-size: clamp(15px, 13px + 0.4vw, 18px);
+			}
+			body {
+				margin: 0;
+				background: var(--bg);
+				color: var(--text);
+				font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+				-webkit-font-smoothing: antialiased;
+			}
+			.num {
+				font-family: "IBM Plex Mono", ui-monospace, monospace;
+				font-variant-numeric: tabular-nums;
+			}
+			a {
+				color: inherit;
+			}
+
+			.wrap {
+				position: relative;
+				width: min(100%, 100vw);
+				max-width: none;
+				margin: 0 auto;
+				padding: 3.5rem clamp(1.5rem, 3.5vw, 4rem) 4rem;
+			}
+			.hero-showcase {
+				display: grid;
+				grid-template-columns: minmax(0, 44rem) minmax(0, 26.5rem);
+				align-items: center;
+				gap: 0.75rem;
+				width: min(100%, 71.5rem);
+				margin: 0 0 2.5rem auto;
+			}
+
+			header.hero {
+				display: grid;
+				grid-template-columns: auto minmax(0, 1fr) auto;
+				align-items: center;
+				column-gap: 1.25rem;
+				row-gap: 0.75rem;
+				width: 100%;
+				margin: 0;
+				padding: 1.2rem 1.3rem 1.25rem;
+				background: rgba(32, 36, 38, 0.88);
+				border: 1px solid rgba(255, 255, 255, 0.08);
+				border-radius: 1.125rem;
+				box-shadow: 0 18px 40px -28px rgba(0, 0, 0, 0.18);
+			}
+			.app-preview {
+				display: block;
+				width: 100%;
+				height: auto;
+				aspect-ratio: 1280 / 558;
+				object-fit: cover;
+				border-radius: 0.75rem;
+				box-shadow: var(--shadow);
+			}
+			.lang-switch {
+				position: absolute;
+				top: 3.5rem;
+				left: clamp(1.5rem, 6vw, 5.5rem);
+				display: inline-flex;
+				align-items: center;
+				gap: 0.2rem;
+				padding: 0.2rem;
+				background: rgba(255, 255, 255, 0.05);
+				border: 1px solid rgba(255, 255, 255, 0.14);
+				border-radius: 999px;
+				backdrop-filter: blur(6px);
+			}
+			@media (max-width: 960px) {
+				.hero-showcase {
+					grid-template-columns: minmax(0, 44rem);
+					justify-content: center;
+					width: min(100%, 44rem);
+					margin: 0 auto 2.5rem;
+				}
+				.lang-switch {
+					top: 0.75rem;
+				}
+			}
+			.lang-tab {
+				appearance: none;
+				border: 0;
+				border-radius: 999px;
+				padding: 0.38rem 0.7rem;
+				background: transparent;
+				color: rgba(234, 231, 224, 0.75);
+				font: inherit;
+				font-size: 0.76rem;
+				font-weight: 600;
+				letter-spacing: 0.04em;
+				text-transform: uppercase;
+				cursor: pointer;
+				transition:
+					background 0.15s ease,
+					color 0.15s ease,
+					transform 0.15s ease;
+			}
+			.lang-tab:hover {
+				transform: translateY(-1px);
+			}
+			.lang-tab.is-active {
+				background: #f4f1ec;
+				color: #1a1204;
+				box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+			}
+			header.hero .hero-icon {
+				width: 5.5rem;
+				height: 5.5rem;
+				border-radius: 1.375rem;
+				box-shadow: var(--shadow);
+				grid-column: 1;
+				grid-row: 1 / span 2;
+			}
+			header.hero .hero-copy {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				text-align: left;
+				gap: 0.4rem;
+				grid-column: 2;
+				grid-row: 1;
+			}
+			header.hero h1 {
+				font-size: 2.1rem;
+				font-weight: 700;
+				letter-spacing: -0.01em;
+				margin: 0;
+				color: var(--text);
+			}
+			header.hero p.tagline {
+				margin: 0;
+				font-size: 1.05rem;
+				color: var(--text-dim);
+				max-width: 30rem;
+			}
+			header.hero .cta-wrap {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 0.6rem;
+				grid-column: 3;
+				grid-row: 1 / span 2;
+				justify-self: start;
+				align-self: center;
+				margin-top: 0;
+			}
+
+			.cta {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.6rem;
+				margin-top: 0;
+				padding: 0.95rem 1.75rem;
+				border-radius: 0.875rem;
+				background: var(--accent);
+				color: var(--accent-ink);
+				font-weight: 600;
+				font-size: 1.05rem;
+				text-decoration: none;
+				box-shadow: var(--shadow);
+				transition: transform 0.15s ease;
+			}
+			.cta:hover {
+				transform: translateY(-1px);
+			}
+			.cta svg {
+				flex: 0 0 auto;
+			}
+			.cta-meta {
+				margin-top: 0;
+				font-size: 0.8rem;
+				color: var(--text-dim);
+				white-space: nowrap;
+			}
+
+			.page-embed {
+				display: block;
+				width: 100%;
+				max-width: none;
+				height: 1280px;
+				border: 0;
+				border-radius: 1.125rem;
+				background: var(--surface);
+				box-shadow: var(--shadow);
+				margin: 0 auto 2.75rem;
+				scrollbar-width: none;
+				overflow: hidden;
+			}
+			.page-embed::-webkit-scrollbar {
+				display: none;
+			}
+
+			section {
+				margin-bottom: 2.75rem;
+			}
+			section h2 {
+				font-size: 1.3rem;
+				font-weight: 700;
+				margin: 0 0 0.9rem;
+				letter-spacing: -0.005em;
+			}
+			section p {
+				color: var(--text-dim);
+				line-height: 1.6;
+				margin: 0 0 0.75rem;
+			}
+
+			.features {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 0.75rem;
+			}
+			.features li {
+				background: var(--surface);
+				border: 1px solid var(--border);
+				border-radius: 0.75rem;
+				padding: 0.9rem 1rem;
+				font-size: 0.88rem;
+				line-height: 1.45;
+			}
+			.features li strong {
+				display: block;
+				margin-bottom: 0.2rem;
+			}
+			@media (max-width: 520px) {
+				.features {
+					grid-template-columns: 1fr;
+				}
+			}
+
+			.steps {
+				counter-reset: step;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				display: flex;
+				flex-direction: column;
+				gap: 0.75rem;
+			}
+			.steps li {
+				counter-increment: step;
+				display: flex;
+				gap: 0.9rem;
+				align-items: flex-start;
+				background: var(--surface);
+				border: 1px solid var(--border);
+				border-radius: 0.75rem;
+				padding: 0.9rem 1rem;
+			}
+			.steps li::before {
+				content: counter(step);
+				flex: 0 0 auto;
+				width: 1.6rem;
+				height: 1.6rem;
+				border-radius: 50%;
+				background: var(--accent-soft);
+				color: var(--accent);
+				font-weight: 700;
+				font-size: 0.85rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.steps li p {
+				margin: 0;
+				color: var(--text);
+				line-height: 1.5;
+			}
+			.steps li .note {
+				display: block;
+				margin-top: 0.2rem;
+				color: var(--text-dim);
+				font-size: 0.85rem;
+			}
+
+			.note-box {
+				background: var(--accent-soft);
+				border-radius: 0.75rem;
+				padding: 0.9rem 1rem;
+				font-size: 0.85rem;
+				color: var(--text);
+				line-height: 1.5;
+			}
+
+			footer {
+				border-top: 1px solid var(--border);
+				padding-top: 1.5rem;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				gap: 0.75rem;
+				font-size: 0.85rem;
+				color: var(--text-dim);
+			}
+			footer a {
+				color: var(--text);
+				text-decoration: none;
+			}
+			footer a:hover {
+				text-decoration: underline;
+			}
+		
+.lang-switch a.lang-tab{ text-decoration:none; display:inline-block; }
+article{ max-width:56rem; margin:0 auto; }
+article h2{ font-size:1.4rem; margin:2.2rem 0 .8rem; }
+article h3{ font-size:1.1rem; margin:1.4rem 0 .5rem; color:var(--text); }
+article p, article li{ color:var(--text-dim); line-height:1.7; }
+article ul, article ol{ padding-left:1.3rem; }
+.crumbs{ max-width:56rem; margin:0 auto 1rem; padding-top:2.6rem; font-size:.85rem; color:var(--text-dim); }
+.crumbs a{ color:var(--text-dim); }
+.hero-simple{ max-width:56rem; margin:0 auto 1.5rem; }
+.hero-simple h1{ font-size:1.9rem; line-height:1.25; margin:.2rem 0 .6rem; }
+.hero-simple p{ color:var(--text-dim); line-height:1.65; margin:0 0 .6rem; }
+.page-embed{ height:1280px; margin-bottom:1.5rem; }
+.table-wrap{ overflow-x:auto; margin-bottom:1rem; }
+table.dof{ width:100%; border-collapse:collapse; font-size:.85rem; background:var(--surface); border:1px solid var(--border); border-radius:.5rem; }
+table.dof th, table.dof td{ padding:.5rem .7rem; border-bottom:1px solid var(--border); text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums; }
+table.dof th:first-child, table.dof td:first-child{ text-align:left; position:sticky; left:0; background:var(--surface); }
+table.dof thead th{ color:var(--text); font-weight:600; }
+table.dof td{ color:var(--text-dim); }
+.facts li strong{ color:var(--text); }
+details{ background:var(--surface); border:1px solid var(--border); border-radius:.75rem; padding:.8rem 1rem; margin-bottom:.6rem; }
+details summary{ cursor:pointer; font-weight:600; color:var(--text); }
+details p{ margin:.6rem 0 0; }
+.chips{ list-style:none; padding:0; margin:0; display:flex; flex-wrap:wrap; gap:.5rem; }
+.chips a{ display:inline-block; padding:.4rem .75rem; border:1px solid var(--border); border-radius:999px; background:var(--surface); color:var(--text); text-decoration:none; font-size:.85rem; }
+.chips a:hover{ border-color:var(--accent); }
+.cta-row{ margin:1rem 0 1.5rem; }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the depth of field of the Tamron 11-20mm F2.8 Di III-A RXD at f/2.8 and 3 m?","acceptedAnswer":{"@type":"Answer","text":"At 14mm, f/2.8 and focus at 3 m, acceptable sharpness runs from 1.67 to 14.9 m — about 1327 cm in total."}},{"@type":"Question","name":"What is the hyperfocal distance of the Tamron 11-20mm F2.8 Di III-A RXD?","acceptedAnswer":{"@type":"Answer","text":"At 14mm and f/8 on a APS-C sensor the hyperfocal distance is about 1.32 m. Focus there and everything from 0.66 m to infinity is sharp."}},{"@type":"Question","name":"How do I get more background blur with the Tamron 11-20mm F2.8 Di III-A RXD?","acceptedAnswer":{"@type":"Answer","text":"Open the aperture to f/2.8, move closer to your subject and increase the distance between subject and background, and zoom in to the long end. You can check the result in the calculator above."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"PhotoSim","item":"https://aleksandr-kai.github.io/photosim/"},{"@type":"ListItem","position":2,"name":"All lenses","item":"https://aleksandr-kai.github.io/photosim/lenses/"},{"@type":"ListItem","position":3,"name":"Tamron 11-20mm F2.8 Di III-A RXD","item":"https://aleksandr-kai.github.io/photosim/lenses/tam1120/"}]}</script>
+</head>
+<body>
+<div class="wrap">
+<div class="lang-switch" aria-label="Language">
+	<a class="lang-tab is-active" href="./" hreflang="en" lang="en" aria-current="page">EN</a>
+	<a class="lang-tab" href="../../ru/lenses/tam1120/" hreflang="ru" lang="ru">RU</a>
+</div>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">PhotoSim</a> › <a href="../">All lenses</a> › Tamron 11-20mm F2.8 Di III-A RXD</nav>
+<header class="hero-simple">
+<h1>Tamron 11-20mm F2.8 Di III-A RXD — depth of field calculator</h1>
+<p>The Tamron 11-20mm F2.8 Di III-A RXD is a zoom lens for the Third-Party (Various Mounts) system with a focal length of 11–20mm, a maximum aperture of f/2.8 and a minimum aperture of f/16. Below is a ready-to-use depth of field (DoF) calculator and tables for typical shooting distances, computed with the same formulas as the PhotoSim app.</p>
+<div class="cta-row"><a class="cta" href="https://github.com/Aleksandr-Kai/photosim/releases/download/v1.0.0/PhotoSim.apk" download>Download for Android (APK)</a> <span class="cta-meta num">v1.0.0 · Android 6.0+ · works offline</span></div>
+</header>
+<iframe class="page-embed" src="../../simulator.html?lens=tam1120" title="Tamron 11-20mm F2.8 Di III-A RXD — depth of field calculator" loading="lazy" scrolling="no" sandbox="allow-scripts allow-same-origin"></iframe>
+
+<article>
+<h2>Key numbers</h2>
+<ul class="facts"><li><strong>Mount / system:</strong> Third-Party (Various Mounts)</li><li><strong>Sensor:</strong> APS-C, 23.5 × 15.6mm</li><li><strong>Focal length:</strong> 11–20mm (about 21mm full-frame equivalent, 1.53× crop)</li><li><strong>Aperture:</strong> f/2.8 to f/16</li><li><strong>DoF at 3 m, 14mm, f/2.8:</strong> 1.67–14.9 m (≈ 1327 cm deep)</li><li><strong>Hyperfocal distance (14mm, f/8):</strong> 1.32 m</li></ul>
+<h2>Depth of field table</h2>
+<p>Distances are measured from the sensor plane. Each cell shows the near and far limit of acceptable sharpness in metres (∞ = to infinity). Circle of confusion = sensor diagonal / 1500.</p>
+<h3>11 mm</h3><div class="table-wrap"><table class="dof"><thead><tr><th>Aperture</th><th>Hyperfocal</th><th>1 m</th><th>2 m</th><th>3 m</th><th>5 m</th><th>10 m</th></tr></thead><tbody><tr><td>f/2.8</td><td>2.31 m</td><td>0.70–1.75</td><td>1.07–14.4</td><td>1.31–∞</td><td>1.58–∞</td><td>1.88–∞</td></tr><tr><td>f/4</td><td>1.62 m</td><td>0.62–2.57</td><td>0.90–∞</td><td>1.05–∞</td><td>1.23–∞</td><td>1.40–∞</td></tr><tr><td>f/5.6</td><td>1.16 m</td><td>0.54–6.78</td><td>0.74–∞</td><td>0.84–∞</td><td>0.94–∞</td><td>1.04–∞</td></tr><tr><td>f/8</td><td>0.82 m</td><td>0.45–∞</td><td>0.58–∞</td><td>0.64–∞</td><td>0.70–∞</td><td>0.75–∞</td></tr><tr><td>f/11</td><td>0.60 m</td><td>0.38–∞</td><td>0.46–∞</td><td>0.50–∞</td><td>0.53–∞</td><td>0.56–∞</td></tr><tr><td>f/16</td><td>0.41 m</td><td>0.29–∞</td><td>0.34–∞</td><td>0.36–∞</td><td>0.38–∞</td><td>0.40–∞</td></tr></tbody></table></div>
+<h3>14 mm</h3><div class="table-wrap"><table class="dof"><thead><tr><th>Aperture</th><th>Hyperfocal</th><th>1 m</th><th>2 m</th><th>3 m</th><th>5 m</th><th>10 m</th></tr></thead><tbody><tr><td>f/2.8</td><td>3.74 m</td><td>0.79–1.36</td><td>1.31–4.27</td><td>1.67–14.9</td><td>2.14–∞</td><td>2.72–∞</td></tr><tr><td>f/4</td><td>2.62 m</td><td>0.73–1.60</td><td>1.14–8.27</td><td>1.40–∞</td><td>1.72–∞</td><td>2.08–∞</td></tr><tr><td>f/5.6</td><td>1.88 m</td><td>0.66–2.11</td><td>0.97–∞</td><td>1.16–∞</td><td>1.37–∞</td><td>1.58–∞</td></tr><tr><td>f/8</td><td>1.32 m</td><td>0.57–3.98</td><td>0.80–∞</td><td>0.92–∞</td><td>1.04–∞</td><td>1.17–∞</td></tr><tr><td>f/11</td><td>0.96 m</td><td>0.49–∞</td><td>0.65–∞</td><td>0.73–∞</td><td>0.81–∞</td><td>0.88–∞</td></tr><tr><td>f/16</td><td>0.67 m</td><td>0.40–∞</td><td>0.50–∞</td><td>0.55–∞</td><td>0.59–∞</td><td>0.62–∞</td></tr></tbody></table></div>
+<h3>20 mm</h3><div class="table-wrap"><table class="dof"><thead><tr><th>Aperture</th><th>Hyperfocal</th><th>1 m</th><th>2 m</th><th>3 m</th><th>5 m</th><th>10 m</th></tr></thead><tbody><tr><td>f/2.8</td><td>7.62 m</td><td>0.89–1.15</td><td>1.59–2.70</td><td>2.16–4.93</td><td>3.02–14.4</td><td>4.33–∞</td></tr><tr><td>f/4</td><td>5.34 m</td><td>0.84–1.22</td><td>1.46–3.18</td><td>1.93–6.79</td><td>2.59–74.6</td><td>3.48–∞</td></tr><tr><td>f/5.6</td><td>3.82 m</td><td>0.80–1.35</td><td>1.32–4.15</td><td>1.69–13.7</td><td>2.17–∞</td><td>2.77–∞</td></tr><tr><td>f/8</td><td>2.68 m</td><td>0.73–1.58</td><td>1.15–7.67</td><td>1.42–∞</td><td>1.75–∞</td><td>2.12–∞</td></tr><tr><td>f/11</td><td>1.95 m</td><td>0.67–2.01</td><td>0.99–∞</td><td>1.19–∞</td><td>1.41–∞</td><td>1.64–∞</td></tr><tr><td>f/16</td><td>1.35 m</td><td>0.58–3.65</td><td>0.81–∞</td><td>0.94–∞</td><td>1.07–∞</td><td>1.19–∞</td></tr></tbody></table></div>
+<h2>FAQ</h2>
+<details><summary>What is the depth of field of the Tamron 11-20mm F2.8 Di III-A RXD at f/2.8 and 3 m?</summary><p>At 14mm, f/2.8 and focus at 3 m, acceptable sharpness runs from 1.67 to 14.9 m — about 1327 cm in total.</p></details>
+<details><summary>What is the hyperfocal distance of the Tamron 11-20mm F2.8 Di III-A RXD?</summary><p>At 14mm and f/8 on a APS-C sensor the hyperfocal distance is about 1.32 m. Focus there and everything from 0.66 m to infinity is sharp.</p></details>
+<details><summary>How do I get more background blur with the Tamron 11-20mm F2.8 Di III-A RXD?</summary><p>Open the aperture to f/2.8, move closer to your subject and increase the distance between subject and background, and zoom in to the long end. You can check the result in the calculator above.</p></details>
+<h2>Other lenses</h2>
+<ul class="chips"><li><a href="../sig16/">Sigma 16mm F1.4 DC DN</a></li><li><a href="../sig30/">Sigma 30mm F1.4 DC DN</a></li><li><a href="../sig56/">Sigma 56mm F1.4 DC DN</a></li><li><a href="../sig1835/">Sigma 18-35mm F1.8 DC HSM Art</a></li><li><a href="../sig1850/">Sigma 18-50mm F2.8 DC DN</a></li><li><a href="../sig1770/">Sigma 17-70mm F2.8-4 DC DN</a></li><li><a href="../sig35/">Sigma 35mm F1.4 DG HSM Art</a></li><li><a href="../sig65/">Sigma 65mm F2 DG DN Contemporary</a></li><li><a href="../sig85/">Sigma 85mm F1.4 DG DN Art</a></li><li><a href="../sig2470/">Sigma 24-70mm F2.8 DG DN Art</a></li><li><a href="../sig105/">Sigma 105mm F1.4 DG HSM Art</a></li><li><a href="../sig100400/">Sigma 100-400mm F5-6.3 DG DN OS</a></li><li><a href="../">Browse all lenses →</a></li></ul>
+</article>
+<footer>
+<span>Made by <a href="https://t.me/aleksandr_kai" target="_blank" rel="noopener noreferrer">@aleksandr_kai</a> on Telegram</span>
+<a href="https://github.com/Aleksandr-Kai/photosim" target="_blank" rel="noopener noreferrer">Source on GitHub</a>
+</footer>
+</div>
+</body>
+</html>

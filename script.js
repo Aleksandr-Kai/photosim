@@ -1446,7 +1446,9 @@
 			// start from the built-in defaults above
 		}
 	}
+	var deepLinked = false;
 	function saveState() {
+		if (deepLinked) return;
 		try {
 			window.localStorage.setItem(STATE_STORAGE_KEY, JSON.stringify(state));
 		} catch (err) {}
@@ -2413,6 +2415,21 @@
 
 	function init() {
 		loadState();
+
+		// SEO landing pages open the calculator preloaded with one lens
+		// (simulator.html?lens=<id>); that visit is a preview and must not
+		// overwrite the user's own remembered setup
+		var lensParam = new URLSearchParams(window.location.search).get("lens");
+		var deepLens = LENSES.filter(function (l) {
+			return l.id === lensParam;
+		})[0];
+		if (deepLens) {
+			deepLinked = true;
+			state.lensId = deepLens.id;
+			if (deepLens.sensorId) state.sensorId = deepLens.sensorId;
+			state.focal = deepLens.minF;
+			state.aperture = deepLens.wMin;
+		}
 
 		populateLensSelect();
 		populateSensorSelect();
