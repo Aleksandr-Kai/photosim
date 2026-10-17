@@ -10,6 +10,9 @@
 			id="page-description"
 		/>
 		<link rel="canonical" href="https://aleksandr-kai.github.io/photosim/" />
+		<link rel="alternate" hreflang="en" href="https://aleksandr-kai.github.io/photosim/" />
+		<link rel="alternate" hreflang="ru" href="https://aleksandr-kai.github.io/photosim/ru/" />
+		<link rel="alternate" hreflang="x-default" href="https://aleksandr-kai.github.io/photosim/" />
 		<meta name="robots" content="index, follow" />
 
 		<meta property="og:type" content="website" />
@@ -505,6 +508,7 @@
 					>
 					<span data-i18n="onTelegram">on Telegram</span>
 				</span>
+				<a href="ru/" hreflang="ru" lang="ru">Калькулятор ГРИП онлайн (русская версия)</a>
 				<a
 					href="https://github.com/Aleksandr-Kai/photosim"
 					target="_blank"
@@ -579,12 +583,15 @@
 				buttons.forEach((button) => {
 					button.addEventListener("click", () => {
 						const language = button.dataset.language;
-						localStorage.setItem(storageKey, language);
+						if (language === "ru") {
+							window.location.href = "ru/";
+							return;
+						}
 						applyLanguage(language);
 					});
 				});
 				iframe.addEventListener("load", () => applyLanguage(currentLanguage));
-				applyLanguage(localStorage.getItem(storageKey) || "en");
+				applyLanguage("en");
 			})();
 		</script>
 	</body>
