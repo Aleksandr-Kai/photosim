@@ -508,4 +508,13 @@ ${entries
 </urlset>
 `;
 write("sitemap.xml", sm);
+// fallbacks: Search Console is sometimes picky about github.io sitemaps, so
+// also publish a plain URL list and a bare XML sitemap (no xhtml extension)
+write("sitemap.txt", entries.map((e) => e[0]).join("\n") + "\n");
+write(
+	"sitemap-pages.xml",
+	`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries
+		.map((e) => `  <url><loc>${e[0]}</loc><lastmod>${lastmod}</lastmod></url>`)
+		.join("\n")}\n</urlset>\n`,
+);
 console.log(`lenses: ${LENSES.length}, pages: ${entries.length}`);

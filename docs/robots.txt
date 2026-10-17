@@ -3,3 +3,5 @@ Allow: /
 Disallow: /simulator.html
 
 Sitemap: https://aleksandr-kai.github.io/photosim/sitemap.xml
+Sitemap: https://aleksandr-kai.github.io/photosim/sitemap-pages.xml
+Sitemap: https://aleksandr-kai.github.io/photosim/sitemap.txt
