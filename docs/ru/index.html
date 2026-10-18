@@ -363,8 +363,58 @@
 			footer a:hover {
 				text-decoration: underline;
 			}
+			@media (max-width: 720px) {
+				.wrap {
+					padding-top: 4rem;
+				}
+			}
+			@media (max-width: 1280px) {
+				.hero-showcase {
+					grid-template-columns: minmax(0, 44rem);
+					justify-content: center;
+					width: min(100%, 44rem);
+					margin: 0 auto 2.5rem;
+				}
+				header.hero {
+					grid-template-columns: 1fr;
+					justify-items: center;
+					text-align: center;
+					padding: 1.4rem 1.1rem;
+				}
+				header.hero .hero-icon,
+				header.hero .hero-copy,
+				header.hero .cta-wrap {
+					grid-column: 1;
+					grid-row: auto;
+				}
+				header.hero .hero-copy {
+					align-items: center;
+					text-align: center;
+				}
+				header.hero p.tagline {
+					max-width: none;
+				}
+				header.hero .cta-wrap {
+					align-items: center;
+					justify-self: center;
+					width: 100%;
+				}
+				.cta {
+					justify-content: center;
+					width: 100%;
+					max-width: 22rem;
+				}
+				.cta-meta {
+					white-space: normal;
+					text-align: center;
+				}
+				.lang-switch {
+					top: 1rem;
+					left: 1rem;
+				}
+			}
 		
-			.lang-switch a.lang-tab{ text-decoration:none; display:inline-block; }
+.lang-switch a.lang-tab{ text-decoration:none; display:inline-block; }
 			.page-embed{ margin-bottom:2rem; }
 			article{ max-width:46rem; margin:0 auto; }
 			article h2{ font-size:1.4rem; margin:2.2rem 0 .8rem; }
@@ -394,17 +444,28 @@
 				<a class="lang-tab is-active" href="./" hreflang="ru" lang="ru" aria-current="page">RU</a>
 			</div>
 
-			<header class="hero-simple">
-				<img class="hero-icon" src="../assets/icon-256.png" alt="Значок PhotoSim" width="80" height="80" />
-				<h1>Калькулятор ГРИП онлайн</h1>
-				<p>PhotoSim показывает, какая часть кадра будет резкой при выбранных объективе, диафрагме, расстоянии и размере матрицы. Бесплатно, без регистрации. Выберите объектив из базы, перетащите объект — и увидите границы глубины резкости.</p>
-				<a class="cta" href="https://github.com/Aleksandr-Kai/photosim/releases/download/v1.0.0/PhotoSim.apk" download>Скачать для Android (APK)</a>
-				<div class="cta-meta num">v1.0.0 · Android 6.0+ · работает офлайн</div>
-			</header>
+			<div class="hero-showcase">
+				<header class="hero">
+					<img class="hero-icon" src="../assets/icon-256.png" alt="Значок PhotoSim" width="88" height="88" />
+					<div class="hero-copy">
+						<h1>Калькулятор ГРИП онлайн</h1>
+						<p class="tagline">Узнайте, что останется резким, прежде чем нажать на спуск. Симулятор глубины резкости для Android с базой реальных объективов и матриц.</p>
+					</div>
+					<div class="cta-wrap">
+						<a class="cta" href="https://github.com/Aleksandr-Kai/photosim/releases/download/v1.0.0/PhotoSim.apk" download>
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							<span>Скачать для Android</span>
+						</a>
+						<div class="cta-meta num">v1.0.0 · APK · Android 6.0+ · офлайн</div>
+					</div>
+				</header>
+				<img class="app-preview" src="../assets/app-preview.png" alt="Скриншот калькулятора ГРИП PhotoSim" width="1280" height="558" />
+			</div>
 
 			<iframe class="page-embed" src="../simulator.html" title="Калькулятор ГРИП PhotoSim" loading="lazy" scrolling="no" sandbox="allow-scripts allow-same-origin"></iframe>
 
 			<article>
+				<p>PhotoSim показывает, какая часть кадра будет резкой при выбранных объективе, диафрагме, расстоянии и размере матрицы. Бесплатно, без регистрации. Выберите объектив из базы, перетащите объект — и увидите границы глубины резкости.</p>
 				<h2>Что такое ГРИП</h2>
 				<p><strong>ГРИП</strong> (глубина резко изображаемого пространства), или глубина резкости, — это протяжённость зоны вдоль оптической оси, в пределах которой объекты получаются на снимке приемлемо резкими. Всё, что ближе ближней границы или дальше дальней, выглядит размытым.</p>
 
