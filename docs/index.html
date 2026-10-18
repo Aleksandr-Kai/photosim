@@ -388,6 +388,56 @@
 			footer a:hover {
 				text-decoration: underline;
 			}
+			@media (max-width: 720px) {
+				.wrap {
+					padding-top: 4rem;
+				}
+			}
+			@media (max-width: 1280px) {
+				.hero-showcase {
+					grid-template-columns: minmax(0, 44rem);
+					justify-content: center;
+					width: min(100%, 44rem);
+					margin: 0 auto 2.5rem;
+				}
+				header.hero {
+					grid-template-columns: 1fr;
+					justify-items: center;
+					text-align: center;
+					padding: 1.4rem 1.1rem;
+				}
+				header.hero .hero-icon,
+				header.hero .hero-copy,
+				header.hero .cta-wrap {
+					grid-column: 1;
+					grid-row: auto;
+				}
+				header.hero .hero-copy {
+					align-items: center;
+					text-align: center;
+				}
+				header.hero p.tagline {
+					max-width: none;
+				}
+				header.hero .cta-wrap {
+					align-items: center;
+					justify-self: center;
+					width: 100%;
+				}
+				.cta {
+					justify-content: center;
+					width: 100%;
+					max-width: 22rem;
+				}
+				.cta-meta {
+					white-space: normal;
+					text-align: center;
+				}
+				.lang-switch {
+					top: 1rem;
+					left: 1rem;
+				}
+			}
 		</style>
 		<script type="application/ld+json">
 			{
@@ -554,7 +604,7 @@
 			(() => {
 				const translations = {
 					en: {
-						title: "PhotoSim — Depth of Field Simulator",
+						title: "Depth of Field Calculator Online — DoF Simulator for Android | PhotoSim",
 						description:
 							"PhotoSim is a free Android app that shows you, before you shoot, how much of a scene stays in focus for a given lens, aperture, and distance. Download the APK and install it on your phone.",
 						tagline:
